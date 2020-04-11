@@ -10,3 +10,12 @@
 Maching Learning can help to use this huge Data more and better.
 ____
 
+## 1.4. Installing R and R Studio
+1. https://cran.r-project.org/
+
+2. Download and Install R
+
+3. www.rstudio.com (IDE for R)
+
+4. Download and install RStudio
+___
