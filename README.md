@@ -86,13 +86,13 @@ After importing Dataset and store it as a Data Frame we need to do these as the 
 ### Important Principle in Machine Learning
 _IN ANY DATASET WHICH YOU ARE GOING TO TRAIN A MACHINE LEARNING MODEL YOU HAVE THE ENTITIES WHICH ARE THE FEATURES AND THE DEPENDENT VARIABLE (two above steps)._
 
-### Features (Independent Variables)
+### Features (Independent Variables) - INPUT VALUES
 Features are the columns, which are the independent informations (here: Country, Age, Salary), with them you are going to PREDICT the DEPENDENT VARIABLE [Mori: For the future!].
 
 ``.ilock`` : To locate indexes  
 ``.iloc[:,:-1]`` : This takes all the Rows and also all the columns of the dataset, EXCEPT the last column (which is going to be predicted)
 
-### Dependent Variable
+### Dependent Variable - TARGET VALUE
 This is usually the last column of the dataset (here: PURCHASED)! Because as you may guess, this company will PREDICT some future customers are going to buy the same product based on these informations.
 
 ___
@@ -214,6 +214,23 @@ ___
 
 ### Encoding Categorial Data - with ``factor()``
 Some data like the "Purchased" and "Country" are Categories (NOT NUMERICAL), we should assign to any of them a number, for example to the "Yes" or "No" for Purchase we can give 1 or 0 and to the countries also some numbers.
+
+### Splitting dataset into training set and test set
+Here we are going to use a package called "caTools" 
+
+#### ``sample.split() - {caTools}``
+Split data from vector Y into two sets in predefined ratio while preserving relative ratios of different labels in Y. Used to split the data used during classification into train and test subsets.
+
+Usage
+ sample.split( Y, SplitRatio = 2/3, group = NULL )  
+Arguments  
+Y	  
+Vector of data labels. If there are only a few labels (as is expected) than relative ratio of data in both subsets will be the same.  
+
+SplitRatio: This sets how much of data should go to the TRAIN-set
+
+#### Return of sample.split()
+This functions returns a list of TRUE and FALSE, where TRUE means that the Observation in that row goes to the TRAIN-set and the FALSE the Observation in that row goes to the TEST-set
 ___
 
 ## 1.9. Feature Scaling
