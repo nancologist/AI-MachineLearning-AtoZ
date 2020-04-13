@@ -98,6 +98,28 @@ This is usually the last column of the dataset (here: PURCHASED)! Because as you
 ___
 
 ## 1.5. Handling Missing Data
+There are some missing data, which is normal in Machine Learning! If we look at the dataset we see that the Salary in Row 4 and the Age in the Raw 6.
+
+You can not leave it like that, because it will cause error by training the model, therefore you must handle them. There are actually several ways to handle them:
+
+1. The 1st way is just to IGNORE those Observations which hav missing data and deleting them. And that would be OK if you have a LARGE dataset so if you have for example 1% Missing data, you know that removing 1% of observations won't change much the LEARNING QUALITY of your MODEL. But sometimes you have a lot of missing data and therefore you must handle them the right way.
+
+2. The 2nd way is to REPLACING the missing data by THE AVERAGE OF ALL THE VALUES IN THAT COLUMN (FEATURE), in which the data is missing.
+
+3. Other ways could be to replace the missing value with the Median of that Column (Feature) or with the maximum frequent value in that column.
+
+### Our Goals
+* We want to replace the missing salary by the average of all the salaries, this is a CLASSIC WAY of handling missing data.
+
+### Package ``Scikit Learn``
+This is one of the important packages by the Data Preprocessing and it has very good tools for that. We will use it a lot in this course.
+
+``pip install scikit-learn``
+
+### How we handle it?
+The class from the package Scikit-Learn is called ``SimpleImputer`` , we are actually going to first import that class, then we will create an Instance of that class, this object will allow us to exactly replace the missing salary, by the average of salaries
+
+``fit(NUMERICAL_VALUES)`` It looks for the missing value and also calculate the replacement.
 ___
 
 ## 1.6. Categorical Data
