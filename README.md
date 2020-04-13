@@ -123,6 +123,7 @@ The class from the package Scikit-Learn is called ``SimpleImputer`` , we are act
 ___
 
 ## 1.6. Categorical Data
+What are categorical variables and how to encode categorical data, which is illustrated in Python by LabelEncoder and OneHotEncoder class from sklearn.preprocessing library, and in R the factor function to transform categorical data into numerical variables.
 ___
 
 ## 1.8. Splitting the Dataset into the Training and Test Set
