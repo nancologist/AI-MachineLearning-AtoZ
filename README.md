@@ -127,7 +127,7 @@ What are categorical variables and how to encode categorical data, which is illu
 
 ___
 
-## 1.8. Splitting the Dataset into the Training and Test Set
+## 1.8.1 Splitting the Dataset into the Training and Test Set
 In Machine Learning we split our data to a Training-Set and a Test-Set.  
 You know that this is about the machine which is going to learn something to make predictions.
 
@@ -161,6 +161,31 @@ To avoid this, you just need to replace:
 
 by
 ``from sklearn.model_selection import train_test_split`` 
+___
+
+## 1.8.2 How is all these in R? 
+### Importing Data
+* ``read.csv(FILE_NAME)`` gives us a data frame created from imported data
+* Attention! The working directory should be set correctly.
+___
+
+### Handling Missing Data in R with ``ifelse()``-function
+``ifelse()`` returns a value with the same shape as test which is filled with elements selected from either yes or no depending on whether the element of test is TRUE or FALSE.
+  
+``ifelse(test, yes, no)``
+#### Arguments
+* ``test``    	
+an object which can be coerced to logical mode.
+
+* ``yes``	
+return values for true elements of test.
+
+* ``no``  	
+return values for false elements of test.
+___
+
+### Encoding Categorial Data - with ``factor()``
+Some data like the "Purchased" and "Country" are Categories (NOT NUMERICAL), we should assign to any of them a number, for example to the "Yes" or "No" for Purchase we can give 1 or 0 and to the countries also some numbers.
 ___
 
 ## 1.9. Feature Scaling
