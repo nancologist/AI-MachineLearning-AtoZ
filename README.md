@@ -52,3 +52,30 @@ Sincerely,
 
 Kirill Eremenko
 ___
+___
+___
+
+# 1. Data Preprocessing
+## 1.1. Module Introduction
+In each section we first start with Python and then do it with the R.
+___
+
+## 1.2. Importing the Libraries
+___
+
+## 1.5. Handling Missing Data
+___
+
+## 1.6. Categorical Data
+___
+
+## 1.8. Splitting the Dataset into the Training and Test Set
+___
+
+## 1.9. Feature Scaling
+___
+
+## 1.10. Our Data Processing Template
+___
+___
+___
