@@ -3,6 +3,8 @@ import matplotlib.pyplot as pyplot
 import pandas
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
 
 # Importing Data and store it as a Data Frame:
 dataset = pandas.read_csv('./data/Data.csv')
@@ -24,6 +26,13 @@ imputer.fit(X=X[:, 1:3])
 
 X[:, 1:3] = imputer.transform(X=X[:, 1:3])
 # .transform do the REPLACING process of missing_values
+
+# Enconding Indepndent Feature (Country)
+columnTransformer = ColumnTransformer(
+    transformers=[('encoder', OneHotEncoder(), [0])],
+    remainder='paththrough'
+)
+X = numpy.array(columnTransformer.fit_transform(X))
 
 # Splitting Data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
