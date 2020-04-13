@@ -31,7 +31,7 @@ X[:, 1:3] = imputer.transform(X=X[:, 1:3])
 # Enconding Indepndent Feature (Country)
 columnTransformer = ColumnTransformer(
     transformers=[('encoder', OneHotEncoder(), [0])],
-    remainder='paththrough'
+    remainder='passthrough'
 )
 X = numpy.array(columnTransformer.fit_transform(X))
 
