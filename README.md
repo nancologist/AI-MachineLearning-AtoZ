@@ -143,6 +143,16 @@ List of (name, transformer, column(s)) tuples specifying the transformer objects
 
 * The input to this transformer should be an array-like of integers or strings, denoting the values taken on by categorical (discrete) features. The features are encoded using a one-hot (aka ‘one-of-K’ or ‘dummy’) encoding scheme. This creates a binary column for each category and returns a sparse matrix or dense array (depending on the sparse parameter)
 ___
+
+### 1.6.2. Encoding Dependent Variable (y)
+#### ``sklearn.preprocessing.LabelEncoder``
+* https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.htm  
+
+* This transformer should be used to encode target values, i.e. ``y`` and not the input ``X``.
+
+* It can also be used to transform non-numerical labels (as long as they are hashable and comparable) to numerical labels.
+___
+
 ___
 
 ## 1.8.1 Splitting the Dataset into the Training and Test Set

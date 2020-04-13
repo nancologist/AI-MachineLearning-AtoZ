@@ -5,6 +5,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import LabelEncoder
 
 # Importing Data and store it as a Data Frame:
 dataset = pandas.read_csv('./data/Data.csv')
@@ -33,6 +34,10 @@ columnTransformer = ColumnTransformer(
     remainder='paththrough'
 )
 X = numpy.array(columnTransformer.fit_transform(X))
+
+# Encoding Dependent Feature (Target Value - y)
+labelEncoder = LabelEncoder()
+y = labelEncoder.fit_transform(y)
 
 # Splitting Data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
