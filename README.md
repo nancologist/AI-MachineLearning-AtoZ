@@ -124,9 +124,43 @@ ___
 
 ## 1.6. Categorical Data
 What are categorical variables and how to encode categorical data, which is illustrated in Python by LabelEncoder and OneHotEncoder class from sklearn.preprocessing library, and in R the factor function to transform categorical data into numerical variables.
+
 ___
 
 ## 1.8. Splitting the Dataset into the Training and Test Set
+In Machine Learning we split our data to a Training-Set and a Test-Set.  
+You know that this is about the machine which is going to learn something to make predictions.
+
+Imagine your machine learn to much on a dataset. Then we are not sure if its performance is great on a new set with a slightly different corrolations.
+
+So we should always keep a part of data for the Test!
+
+The performance of the Machine should not be that much different on the Test-Set comparing to Training-Set, so then we can conclude that this Model can understand Correlations (And he did not learn it by heart!) and so it can adapt the new sets of data in new situations.
+
+BETWEEN 20% TO 30% OF DATA IS A GOOD CHOICE FOR THE TEST-PART!
+
+### How Machine Learns Now?
+Now the Machine Learning Model is going to find a CORRELATION between the X_train and y_train and with this Correlation it can predict a new_y for a new_X! or we can test it the quality of its Prediction with the X_test and y_test
+
+___
+### WARNING - Update (Part 1-8)
+WARNING - Update
+Dear students,
+
+in the following tutorial, the first line of code we will type will be:
+
+from sklearn.cross_validation import train_test_split 
+
+However the "cross_validation" name is now deprecated and was replaced by "model_selection" inside the new anaconda versions.
+
+Therefore you might get a warning or even an error if you run this line of code above.
+
+To avoid this, you just need to replace:
+
+``from sklearn.cross_validation import train_test_split`` 
+
+by
+``from sklearn.model_selection import train_test_split`` 
 ___
 
 ## 1.9. Feature Scaling
