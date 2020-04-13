@@ -61,6 +61,18 @@ In each section we first start with Python and then do it with the R.
 ___
 
 ## 1.2. Importing the Libraries
+### PYTHON
+For Machine Learning in Python we always need at least these three libraries:
+
+* __Numpy__ : To work with arrays and do mathematical operations
+* __matplotlib.pyplot__ : Which allows you to create charts
+* __pandas__ : which allows you to import dataset and create easily matrices and vectors.
+
+#### Installation
+So we should install these libraries which we need into our Virtual Env.:
+* ``pip install numpy``
+* ``pip install matplotlib``
+* ``pip install pandas``
 ___
 
 ## 1.5. Handling Missing Data
