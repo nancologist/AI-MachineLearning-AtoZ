@@ -60,19 +60,41 @@ ___
 In each section we first start with Python and then do it with the R.
 ___
 
-## 1.2. Importing the Libraries
-### PYTHON
+## 1.2. Importing the Libraries (Python)
 For Machine Learning in Python we always need at least these three libraries:
 
 * __Numpy__ : To work with arrays and do mathematical operations
 * __matplotlib.pyplot__ : Which allows you to create charts
 * __pandas__ : which allows you to import dataset and create easily matrices and vectors.
 
-#### Installation
+### Installation
 So we should install these libraries which we need into our Virtual Env.:
 * ``pip install numpy``
 * ``pip install matplotlib``
 * ``pip install pandas``
+___
+## 1.3. Importing Dataset (Python)
+Data.csv : This file here is like a Retail Company which analysis "Which client purchased one of their products, so these the rows (observations) i this dataset correspond to the different customers of this employee, and their infos... and the last column is about if they bought the Product or not."
+
+``pandas.read_csv()``: This creates a Data Frame from a .csv file.
+
+### Next Steps
+After importing Dataset and store it as a Data Frame we need to do these as the next steps:
+1. Creating Matrix of Features.
+2. Dependent Variable, a Vector.
+
+### Important Principle in Machine Learning
+_IN ANY DATASET WHICH YOU ARE GOING TO TRAIN A MACHINE LEARNING MODEL YOU HAVE THE ENTITIES WHICH ARE THE FEATURES AND THE DEPENDENT VARIABLE (two above steps)._
+
+### Features (Independent Variables)
+Features are the columns, which are the independent informations (here: Country, Age, Salary), with them you are going to PREDICT the DEPENDENT VARIABLE [Mori: For the future!].
+
+``.ilock`` : To locate indexes  
+``.iloc[:,:-1]`` : This takes all the Rows and also all the columns of the dataset, EXCEPT the last column (which is going to be predicted)
+
+### Dependent Variable
+This is usually the last column of the dataset (here: PURCHASED)! Because as you may guess, this company will PREDICT some future customers are going to buy the same product based on these informations.
+
 ___
 
 ## 1.5. Handling Missing Data
