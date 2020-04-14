@@ -174,9 +174,38 @@ ___
 * It can also be used to transform non-numerical labels (as long as they are hashable and comparable) to numerical labels.
 ___
 
+## 1.7. Feature Scaling
+### WHAT - Definition
+__Feature Scaling is a technique that will put all your features in the SAME RANGE.__    
+
+If we look at our ``Data.csv`` we can clearly see that the values of the Age-feature are NOT in the same RANGE as the values of the Salary-feature the Age-range is from like 0 to 100 and the Salary-Range is from 0 to 100 thousand.
+
+Now we want to put the Age-Range and the Salary-Range in a same range using FEATURE SCALING technique.
+
+
+### WHY - should we apply Feature Scaling?
+For some of the ML Models (not all of them) if your different Features have a huge difference in range of their values, this can cause a __BIAS IN THE CORRELATIONS COMPUTATIONS__.  
+In another word, the features that have higher values compared to the other ones will DOMINATE the other features so that these other features may NOT BE CONSIDERED in the Correlation Computation.
+
+So depends on our Model sometimes we need to apply the Feature Scaling and sometimes it is not necessary, because the Model automatically can detect this issue and they fix this with ADAPTING the COEFFICIENTS (For example you see that with the Linear Regression. Linear Regression has some coefficients for each of the Features, so the Features with super HIGH VALUES will get a very LOW COEFFICIENTS. But for other regressions like Logistic Regressions or also the ML Model in R, we should apply the Feature Scaling)
+
+### HOW - Feature Scaling Methods
+* Standardisation : taking each value of the feature and subtract it by the Mean and then divided by the Standard Deviation. This puts all the values in range of usually between -3 and +3.
+
+* Normalisation : In this we subtract the values of Feature by the Minimum value of the Feature and then divided by the Range (Max - Min). This will put all the values in the Feature between 0 and 1.
+
+![feature scaling](./images/feature_scaling.png)
+
+#### Standardisation vs. Normalisation
+_Hadelin: I have had tons of experience with both and I did not observe much difference in the final accuracy and result between these two techniques._
+
+``StandardScaler()`` keeps the X as numpy.array so we don't need to apply ``numpy.array()`` in LINE-48. 
 ___
 
-## 1.8.1 Splitting the Dataset into the Training and Test Set
+___
+## 1.8. Splitting Dataset
+
+## 1.8.1 Splitting the Dataset into the Training and Test Set (Python)
 In Machine Learning we split our data to a Training-Set and a Test-Set.  
 You know that this is about the machine which is going to learn something to make predictions.
 
@@ -252,34 +281,6 @@ SplitRatio: This sets how much of data should go to the TRAIN-set
 
 #### Return of sample.split()
 This functions returns a list of TRUE and FALSE, where TRUE means that the Observation in that row goes to the TRAIN-set and the FALSE the Observation in that row goes to the TEST-set
-___
-
-## 1.9. Feature Scaling
-### WHAT - Definition
-__Feature Scaling is a technique that will put all your features in the SAME RANGE.__    
-
-If we look at our ``Data.csv`` we can clearly see that the values of the Age-feature are NOT in the same RANGE as the values of the Salary-feature the Age-range is from like 0 to 100 and the Salary-Range is from 0 to 100 thousand.
-
-Now we want to put the Age-Range and the Salary-Range in a same range using FEATURE SCALING technique.
-
-
-### WHY - should we apply Feature Scaling?
-For some of the ML Models (not all of them) if your different Features have a huge difference in range of their values, this can cause a __BIAS IN THE CORRELATIONS COMPUTATIONS__.  
-In another word, the features that have higher values compared to the other ones will DOMINATE the other features so that these other features may NOT BE CONSIDERED in the Correlation Computation.
-
-So depends on our Model sometimes we need to apply the Feature Scaling and sometimes it is not necessary, because the Model automatically can detect this issue and they fix this with ADAPTING the COEFFICIENTS (For example you see that with the Linear Regression. Linear Regression has some coefficients for each of the Features, so the Features with super HIGH VALUES will get a very LOW COEFFICIENTS. But for other regressions like Logistic Regressions or also the ML Model in R, we should apply the Feature Scaling)
-
-### HOW - Feature Scaling Methods
-* Standardisation : taking each value of the feature and subtract it by the Mean and then divided by the Standard Deviation. This puts all the values in range of usually between -3 and +3.
-
-* Normalisation : In this we subtract the values of Feature by the Minimum value of the Feature and then divided by the Range (Max - Min). This will put all the values in the Feature between 0 and 1.
-
-![feature scaling](./images/feature_scaling.png)
-
-#### Standardisation vs. Normalisation
-_Hadelin: I have had tons of experience with both and I did not observe much difference in the final accuracy and result between these two techniques._
-
-``StandardScaler()`` keeps the X as numpy.array so we don't need to apply ``numpy.array()`` in LINE-48. 
 ___
 
 ## 1.10. Our Data Processing Template
