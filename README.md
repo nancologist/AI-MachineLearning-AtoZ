@@ -288,8 +288,56 @@ ___
 ___
 ___
 
+# 2. Regression
+Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
+
+In this part, you will understand and learn how to implement the following Machine Learning Regression models:
+
+* Simple Linear Regression
+* Multiple Linear Regression
+* Polynomial Regression
+* Support Vector for Regression (SVR)
+* Decision Tree Classification
+* Random Forest Classification
+
+## 2.1. Simple Linear Regression
+### 2.1.1. Dataset + Business Problem Description
+### 2.1.2. Simple Linear Regression Intuition - Step 1
+### 2.1.3. Simple Linear Regression Intuition - Step 2
+### 2.1.4. Simple Linear Regression in Python - Step 1
+### 2.1.5. Simple Linear Regression in Python - Step 2
+### 2.1.6. Simple Linear Regression in Python - Step 3
+### 2.1.7. Simple Linear Regression in Python - Step 4
+### 2.1.8. Simple Linear Regression in R - Step 1
+### 2.1.9. Simple Linear Regression in R - Step 2
+### 2.1.10. Simple Linear Regression in R - Step 3
+### 2.1.11. Simple Linear Regression in R - Step 4
+___
 
 
+## 2.2. Multiple Linear Regression
+...
+___
+
+## 2.3. Polynomial Regression
+...
+___
+
+## 2.4. Support Vector Regression (SVR)
+...
+___
+
+## 2.5. Decision Tree Regression
+...
+___
+
+## 2.6. Random Forest Regression
+...
+___
+
+## 2.7. Evaluating Regression Models Performance
+...
+___
 
 
 
