@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
 
 # Importing Data and store it as a Data Frame: ++++++++++++++++++++++++++++++++++
 dataset = pandas.read_csv('./data/Data.csv')
@@ -41,7 +42,12 @@ X = numpy.array(columnTransformer.fit_transform(X))
 labelEncoder = LabelEncoder()
 y = labelEncoder.fit_transform(y)
 
-# Splitting Data
+# Feature Scaling +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## 1. Using Standardisation Method:
+standardScaler = StandardScaler()
+X = standardScaler.fit_transform(X)
+
+# Splitting Data +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 # This function makes a random splitting with the given test_size
 # Attention : Just for the purpose of getting the same result we are going to set the "random_state" , otherwise we shouldn't do that.

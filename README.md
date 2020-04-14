@@ -144,7 +144,7 @@ THE ONE-HOT-ENCODER CREATES ``BINARY VECTORS`` FOR EACH COUNTRY.
     
     4. fit_transform() : It does the both FITTING and TRANSFORMING at once! (This was not possible by ``imputer``, so there we have first used ``.fit()`` and then ``.transform()`` in LINE-24 and LINE-28)
     
-    5. LINE-38 : We use ``numpy.array()`` because it is what the Model can accept by the training!
+    5. LINE-38 : We use ``numpy.array()`` because ``ColumnTransformer()`` does not do that for us. And it should be a Numpy-Array, otherwise our Model can not train with it!
     
     6. _You now know to apply the One-Hot-Encoding when you have several categories in the matrix of features, but also you can do a simple Label-Encoding when you have two classes which you can directly encode to 0 and 1, in other word BINARY OUTCOME._
 
@@ -255,10 +255,45 @@ This functions returns a list of TRUE and FALSE, where TRUE means that the Obser
 ___
 
 ## 1.9. Feature Scaling
+### WHAT - Definition
+__Feature Scaling is a technique that will put all your features in the SAME RANGE.__    
 
+If we look at our ``Data.csv`` we can clearly see that the values of the Age-feature are NOT in the same RANGE as the values of the Salary-feature the Age-range is from like 0 to 100 and the Salary-Range is from 0 to 100 thousand.
+
+Now we want to put the Age-Range and the Salary-Range in a same range using FEATURE SCALING technique.
+
+
+### WHY - should we apply Feature Scaling?
+For some of the ML Models (not all of them) if your different Features have a huge difference in range of their values, this can cause a __BIAS IN THE CORRELATIONS COMPUTATIONS__.  
+In another word, the features that have higher values compared to the other ones will DOMINATE the other features so that these other features may NOT BE CONSIDERED in the Correlation Computation.
+
+So depends on our Model sometimes we need to apply the Feature Scaling and sometimes it is not necessary, because the Model automatically can detect this issue and they fix this with ADAPTING the COEFFICIENTS (For example you see that with the Linear Regression. Linear Regression has some coefficients for each of the Features, so the Features with super HIGH VALUES will get a very LOW COEFFICIENTS. But for other regressions like Logistic Regressions or also the ML Model in R, we should apply the Feature Scaling)
+
+### HOW - Feature Scaling Methods
+* Standardisation : taking each value of the feature and subtract it by the Mean and then divided by the Standard Deviation. This puts all the values in range of usually between -3 and +3.
+
+* Normalisation : In this we subtract the values of Feature by the Minimum value of the Feature and then divided by the Range (Max - Min). This will put all the values in the Feature between 0 and 1.
+
+![feature scaling](./images/feature_scaling.png)
+
+#### Standardisation vs. Normalisation
+_Hadelin: I have had tons of experience with both and I did not observe much difference in the final accuracy and result between these two techniques._
+
+``StandardScaler()`` keeps the X as numpy.array so we don't need to apply ``numpy.array()`` in LINE-48. 
 ___
 
 ## 1.10. Our Data Processing Template
 ___
 ___
 ___
+
+
+
+
+
+
+
+
+
+
+
