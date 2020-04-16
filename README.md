@@ -283,7 +283,29 @@ SplitRatio: This sets how much of data should go to the TRAIN-set
 This functions returns a list of TRUE and FALSE, where TRUE means that the Observation in that row goes to the TRAIN-set and the FALSE the Observation in that row goes to the TEST-set
 ___
 
-## 1.10. Our Data Processing Template
+## 1.10. Data PreProcessing in R
+### 1.10.1. Dataset Description
+___
+
+### 1.10.2. Dataset Description
+___
+
+### 1.10.3. Importing Dataset
+___
+
+### 1.10.4. Taking care of Missing Data
+___
+
+### 1.10.5. Encoding Categorical Data
+___
+
+### 1.10.6. Splitting the dataset into the Training set and Test set
+___
+
+### 1.10.7. Feature Scaling
+___
+
+### 1.10.8. Data PreProcessing Template
 ___
 ___
 ___
