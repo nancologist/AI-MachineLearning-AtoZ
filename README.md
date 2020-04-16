@@ -287,25 +287,32 @@ ___
 ### 1.10.1. Dataset Description
 ___
 
-### 1.10.2. Dataset Description
+### 1.10.2. R - Importing Dataset
+Instead of ``setwd()`` to set the Working Directory we can use in the bottom right window: 
+
+1. Browser to the folder of your project
+
+2. in RStudio the ``More`` button and choose
+
+3. Choose ``Set as working directory``.
+
+### R is 1-Base!
+ATTENTION: In contrary to a lot of programming languages, R is a 1-Base language this means the indexes in Data Structures and Datasets begin from 1 and NOT zero!
 ___
 
-### 1.10.3. Importing Dataset
+### 1.10.3. R - Taking care of Missing Data
 ___
 
-### 1.10.4. Taking care of Missing Data
+### 1.10.4. R - Encoding Categorical Data
 ___
 
-### 1.10.5. Encoding Categorical Data
+### 1.10.5. R - Splitting the dataset into the Training set and Test set
 ___
 
-### 1.10.6. Splitting the dataset into the Training set and Test set
+### 1.10.6. R - Feature Scaling
 ___
 
-### 1.10.7. Feature Scaling
-___
-
-### 1.10.8. Data PreProcessing Template
+### 1.10.7. R - Data PreProcessing Template
 ___
 ___
 ___
