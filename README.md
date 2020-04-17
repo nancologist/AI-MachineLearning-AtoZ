@@ -488,6 +488,8 @@ ___
 * ``pyplot.show()`` To Notify Python that we are at the end of creating a plot and we want to show it! 
 
 ![salary_xp_trainingset](./chapter2_regression/chapter2-1_linear_regression/python/plots/salay_xp_trainingset_linear_reg.png)
+
+FOR THE TEST-SET YOU CAN GET A SIMILAR PLOT LIKE ABOVE WITH RUNNING THE PYTHON CODE!
 ___
 ___
 

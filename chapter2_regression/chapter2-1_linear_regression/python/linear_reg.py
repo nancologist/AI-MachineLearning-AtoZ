@@ -21,9 +21,18 @@ linear_regressor.fit(X_train, y_train)
 y_pred = linear_regressor.predict(X_test)
 
 # Visualising Data +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Training Set
 pyplot.scatter(X_train, y_train, color='red')
 pyplot.plot(X_train, linear_regressor.predict(X_train), color='blue')
 pyplot.title('Salary & XP (Training Set)')
+pyplot.xlabel('Years of Experience')
+pyplot.ylabel('Salary')
+pyplot.show()
+
+# Test Set
+pyplot.scatter(X_test, y_test, color='red')
+pyplot.plot(X_test, linear_regressor.predict(X_test), color='blue')
+pyplot.title('Salary & XP (Test Set)')
 pyplot.xlabel('Years of Experience')
 pyplot.ylabel('Salary')
 pyplot.show()
