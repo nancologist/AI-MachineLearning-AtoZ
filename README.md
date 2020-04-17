@@ -478,7 +478,12 @@ ___
 ERROR: ``X = dataset.iloc[:, 1].values`` had created a 1D array but for the ``linear_regression.fit()`` the ``X`` should be a 2D array. so i changed it to: ``X = dataset.iloc[:, 0:1].values``
 ___
 
-### 2.1.5. Simple Linear Regression in Python - Step 3
+### 2.1.5. Simple Linear Regression in Python - Predict Salaries
+``y_pred`` is the vector of PREDICTIONS of the Dependent Variable. Here in our example this is the PREDICTED SALARY for all Observations in our TEST-SET.
+
+Now we should compare the Prediction (``y_pred``) with ``y_test`` (y_test is the real data)
+___
+
 ### 2.1.6. Simple Linear Regression in Python - Step 4
 ### 2.1.7. Simple Linear Regression in R - Step 1
 ### 2.1.8. Simple Linear Regression in R - Step 2
