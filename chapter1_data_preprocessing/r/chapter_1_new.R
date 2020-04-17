@@ -47,6 +47,14 @@ splitter <- sample.split(dataset$Purchased, SplitRatio = 0.8)
 training_set <- subset(dataset, splitter == TRUE)
 test_set <- subset(dataset, splitter == FALSE)
 
+# Feature Scaling +++++++++++++++++++++++++++++++++++++++++
 
+# Mori: "I personally would like to run this part before
+#       Data Splitting, so that we already have Scaled Features
+#       For training_set and test_set! (Save one line code!)
+
+training_set[, 2:3] <- scale(training_set[, 2:3])
+test_set[, 2:3] <- scale(test_set[, 2:3])
+# The columns Country and Purchased are excluded!
 
 

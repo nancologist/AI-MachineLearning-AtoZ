@@ -342,6 +342,13 @@ By the way this function returns a vector of Trues and Falses for Observations, 
 ___
 
 ### 1.10.6. R - Feature Scaling
+Same explanation like in the Feature Scaling Python Part above.
+
+### scale()
+Here we can not simply write so :
+``training_set <- scale(training_set)`` Because the columns Country and Purchased are not Numeric yet!!! BECAUSE THE ``factor()`` IN R IS NOT A NUMERIC FUNCTION! 
+
+Solution: We are going to exclude the Country and Purchases here!
 ___
 
 ### 1.10.7. R - Data PreProcessing Template
