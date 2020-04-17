@@ -493,7 +493,7 @@ FOR THE TEST-SET YOU CAN GET A SIMILAR PLOT LIKE ABOVE WITH RUNNING THE PYTHON C
 ___
 ___
 
-### 2.1.7. R - Simple Linear Regression -
+### 2.1.7. R - Importing & Splitting Data
 ### 2.1.8. R - Simple Linear Regression -
 ### 2.1.9. R - Simple Linear Regression -
 
