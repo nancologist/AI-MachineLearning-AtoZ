@@ -369,17 +369,64 @@ In this part, you will understand and learn how to implement the following Machi
 * Random Forest Classification
 
 ## 2.1. Simple Linear Regression
-### 2.1.1. Dataset + Business Problem Description
-### 2.1.2. Simple Linear Regression Intuition - Step 1
-### 2.1.3. Simple Linear Regression Intuition - Step 2
-### 2.1.4. Simple Linear Regression in Python - Step 1
-### 2.1.5. Simple Linear Regression in Python - Step 2
-### 2.1.6. Simple Linear Regression in Python - Step 3
-### 2.1.7. Simple Linear Regression in Python - Step 4
-### 2.1.8. Simple Linear Regression in R - Step 1
-### 2.1.9. Simple Linear Regression in R - Step 2
-### 2.1.10. Simple Linear Regression in R - Step 3
-### 2.1.11. Simple Linear Regression in R - Step 4
+### 2.1.1. Simple Linear Regression Intuition - Step 1
+The linear equation and the name of its components:
+![linear_equation](./images/linear_regression_01.png)
+
+So we are going to look at an Example for Linear Regression: In the following we want to know homw the ``salary`` of employees in a company depends on their ``experience``.
+
+![linear_regression_example](./images/linear_regression_02.png)
+
+#### 2.1.1.1. Explaining The Above Diagram 
+So now let's look at the simple in your regression because it's the easiest one to discuss. It's very pretty straightforward you can visualize it quite well.
+
+So here we got the y and x axis. Let's look at that specific example where we have EXPERIENCE and SALARY. So experience is going to be our horizontal axis. Salary is all vertical axis and we want to understand how people's salary depends on their experience.
+
+WELL WHAT WE DO IN REGRESSION IS WE DON'T JUST COME UP WITH A THEORY WE LOOK AT THE EVIDENCE WE'LL LOOK AT THE LIVE HARD FACTS SO HERE ARE SOME OBSERVATIONS WE'VE HAD.
+
+So in a certain company this is how salaries are distributed among people who have different levels of experience and what a regression does.
+
+So that's a formula for aggression. In our case it'll change to salary equals be zero plus ``b_1`` Times EXPERIENCE.
+
+AND WHAT THAT ESSENTIALLY IT MEANS IS JUST PUTTING A LINE THROUGH YOUR CHART THAT BEST FITS THIS DATA and we'll talk about best fitting in the next tutorial when we're talking about ordinary squares.
+
+But for now this is the chart. This is the line that best fits as Darren even looks like it right.
+___
+
+#### 2.1.1.2. Coefficient ``b_0``
+For now let's focus on the coefficients and the caffeine and the constant.
+
+So what does the constant mean here. Well the that actually means the point where the line crosses the vertical axis and let's say it's $30000.
+
+What does that mean. Well it means that when when experience is zero. So when as you say on the horizontal axis when experience is at zero in the formula on the right you can see that the second part ``b_1`` Times experience becomes zero so salary equals zero.
+
+That means that salary will equal to $30000 when a person has no experience so soon somebody is know fresh from University and joins this company. Most likely they will have a salary about $30000.
+___
+
+#### 2.1.1.3. Coefficient ``b_1``
+Now what is ``b_1``, ``b_1`` IS THE SLOPE OF THE LINE. 
+
+AND SO THE STEEPER THE LINE THE MORE YOU GET MORE MONEY YOU GET PER EXTRA YEAR OF EXPERIENCE.
+
+Let's look at this. In this particular example let's say somebody went from I don't know maybe four to five years of ``experience``. So then to understand how his salary increase you have to project this onto the line and then project that onto the salary access and you can see that here for one of your experience the person will get AN EXTRA TEN THOUSAND DOLLARS ON TOP OF HIS SALARY.
+
+So if the coefficient ``b_1`` is less, then the slope will be less and that means the salary increase will be less per every year of experience. If the slope is greater then that means the experience will yield more increase in salary and that's pretty much it.
+___
+
+That's how a simple your regression works. So the core goal here is that we're not just drawing a line theoretically that we can we came up with
+
+SOME HOW WE'RE ACTUALLY USING OBSERVATIONS THAT WE HAVE TO FIND THE BEST FITTING LINE AND WHAT BEST FITTING LINE IS WE'LL TALK ABOUT THAT IN THE NEXT TUTORIAL.
+___
+
+### 2.1.2. Simple Linear Regression Intuition - Step 2
+### 2.1.3. Simple Linear Regression in Python - Step 1
+### 2.1.4. Simple Linear Regression in Python - Step 2
+### 2.1.5. Simple Linear Regression in Python - Step 3
+### 2.1.6. Simple Linear Regression in Python - Step 4
+### 2.1.7. Simple Linear Regression in R - Step 1
+### 2.1.8. Simple Linear Regression in R - Step 2
+### 2.1.9. Simple Linear Regression in R - Step 3
+### 2.1.10. Simple Linear Regression in R - Step 4
 ___
 
 
