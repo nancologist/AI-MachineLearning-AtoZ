@@ -10,4 +10,8 @@ splitter <- sample.split(dataset$Salary, SplitRatio = 0.8)
 training_set <- subset(dataset, splitter == TRUE)
 test_set <- subset(dataset, splitter == FALSE)
 
-# R-Package will take care of Feature Scaling...
+# R-Package will take care of Feature Scaling
+
+
+# Fit Simple Linear Regression to Training Set ++++++++++++++++++++
+linear_regressor <- lm(formula = Salary ~ YearsExpriens, data = training_set)

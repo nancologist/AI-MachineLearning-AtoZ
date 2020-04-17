@@ -494,7 +494,38 @@ ___
 ___
 
 ### 2.1.7. R - Importing & Splitting Data
-### 2.1.8. R - Simple Linear Regression -
+___
+
+### 2.1.8. R - Fit Simple Linear Regression to Training Set
+#### lm(FORMULA, TRAINING_SET) - Linear Models
+``Salary ~ YearsExpriens`` : This means that Salary is proportion to Years of Experience.
+___
+
+#### Summary()
+If you run now ``summary(linear_regresor)`` you get a result which contains the following:
+````
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      25811.8     2707.4   9.534 2.86e-09 ***
+YearsExperience   9426.6      431.8  21.834  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+````
+
+Not only it tells the value of your coefficients in the simple linear equation. But it also tells you the STATISTICAL SIGNIFICANCES of your coefficients.  
+Here we see 3 Stars (***) for the YearsExperience and this means that this Dependent Value is HIGHLY STATISTICALLY SIGNIFICANT.
+
+The reason here that the YearsExperience so so Highly Statistically Significant is that it has a STRONG RELATIONSHIP with Salary.
+
+#### Pr(>|t|) - "P-value"
+It is another indicator of Statistically Significance, because the LOWER the Pr() is, the MORE Significant your Dependent Variable is going to be, that is the more impact your Independent Variable (X) has on your Dependent Variable (y).
+
+A good threshold for the Pr() is ``5%``, which means that whenever we are below 5%, the Independent Variable (y) is highly statistically significant, and when we are over 5% that means this is less statistically significant. 
+
+And here we can see that Pr() value for the ``YearsExperience`` (Independent Variable) is less than ``2e-16`` which means that this is very very small. That means that the ``YearsExperience`` is HIGHLY STATISTICALLY SIGNIFICANT and has a high effect on Dependent Variable ``Salary`` in the formula ``lm(formula = Salary ~ Experience, ....)`` 
+
+___
+
 ### 2.1.9. R - Simple Linear Regression -
 
 ___
