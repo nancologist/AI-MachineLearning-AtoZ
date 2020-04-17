@@ -464,7 +464,16 @@ So that's how the simple linear regression works and look for you on the next tu
 
 ___
 
-### 2.1.3. Simple Linear Regression in Python - Step 1
+### 2.1.3. Simple Linear Regression in Python - Importing and Splitting Data
+#### 2.1.3.1. Data
+* Every Row is corresponding to an EMPLOYEE (Observation).
+* For each Employee we have two data : Years of Experience and Salary
+___
+
+#### 2.1.3.2. Goal
+Building a simply linear regression model which will be trained to understand the correlation between the years of experience and the salary.
+___
+
 ### 2.1.4. Simple Linear Regression in Python - Step 2
 ### 2.1.5. Simple Linear Regression in Python - Step 3
 ### 2.1.6. Simple Linear Regression in Python - Step 4
