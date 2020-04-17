@@ -301,6 +301,23 @@ ATTENTION: In contrary to a lot of programming languages, R is a 1-Base language
 ___
 
 ### 1.10.3. R - Taking care of Missing Data
+Same explanations like in Python part.
+
+We are going to replace the missing data with the average of their columns.
+
+#### ifelse(condition, valIfTrue, valIfFalse)
+This function works almost like a normal if-else statement, the first argument is the condition which should be evaluated.   
+One of the second and the third arguments depends on the result of the first argument will be the output of this function. 
+
+### is.na(VAR)
+This function returns TRUE if the VAR is null or nothing. Otherwise FALSE.
+
+### ave() vs. mean()
+```r
+v1 <- c(1,6,5)
+mean(v1) # returns 4
+ave(v1) # returns 4, 4, 4
+``` 
 ___
 
 ### 1.10.4. R - Encoding Categorical Data
