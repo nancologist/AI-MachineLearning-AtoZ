@@ -335,6 +335,10 @@ mydata[paste("nationality", unique_value, sep = ".")] <- ifelse(mydata$nationali
 ___
 
 ### 1.10.5. R - Splitting the dataset into the Training set and Test set
+#### sample.split()
+To split the dataset in R using the function ``sample.split()`` we need only to set the Y as the 1st argument and the second argument should be a number between 0 and 1 to specify the share of the Training Set.
+
+By the way this function returns a vector of Trues and Falses for Observations, so if it returns for an Observation "True", this means, this Observation is chosen for the Training Set.
 ___
 
 ### 1.10.6. R - Feature Scaling

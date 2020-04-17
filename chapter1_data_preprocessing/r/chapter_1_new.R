@@ -37,3 +37,16 @@ dataset$Purchased = factor(
 #}
 
 
+# Splitting Dataset ++++++++++++++++++++++++++++++++++++++++
+# install.packages('caTools')
+library(caTools)
+set.seed(123) # To get the same result as in the Course.
+
+splitter <- sample.split(dataset$Purchased, SplitRatio = 0.8)
+
+training_set <- subset(dataset, splitter == TRUE)
+test_set <- subset(dataset, splitter == FALSE)
+
+
+
+
