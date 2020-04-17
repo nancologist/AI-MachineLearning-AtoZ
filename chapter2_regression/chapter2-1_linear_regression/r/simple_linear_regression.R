@@ -22,8 +22,60 @@ summary(linear_regressor)
 y_pred <- predict(linear_regressor, newdata = test_set)
 
 
+# Visaulising Data and Prediction +++++++++++++++++++++++++++++++++
+# install.packages('ggplots2')
+library(ggplot2)
+
+# Training-Set Plot +++++++++++++++++++++++++
+ggplot() +
+    
+    geom_point( # Scattered Points of Observations in Training Set
+        aes(
+            x = training_set$YearsExperience,
+            y = training_set$Salary
+        ),
+        colour = 'red'
+    ) +
+    
+    geom_line( # Linear Regression Line
+        aes(
+            x = training_set$YearsExperience,
+            y = predict(linear_regressor, newdata = training_set)
+        ),
+        colour = 'blue'
+    ) +
+    
+    ggtitle('Salary & XP (Training Set)') +
+    
+    xlab('Years of Experience') +
+    
+    ylab('Salary')
 
 
+# Test-Set Plot +++++++++++++++++++++++++
+ggplot() +
+    
+    geom_point( # Scattered Points of Observations in Training Set
+        aes(
+            x = test_set$YearsExperience,
+            y = test_set$Salary
+        ),
+        colour = 'red'
+    ) +
+    
+    geom_line( # Linear Regression Line
+        aes(
+            x = training_set$YearsExperience,
+            y = predict(linear_regressor, newdata = training_set)
+        ),
+        colour = 'blue'
+    ) +
+    
+    ggtitle('Salary & XP (Test Set)') +
+    
+    xlab('Years of Experience') +
+    
+    ylab('Salary')
 
 
 

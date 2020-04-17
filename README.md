@@ -530,6 +530,17 @@ ___
 
 ___
 
+### 2.1.10. R - Visualising Data (Scattered Points) and Prediction (LinReg)
+* We need here ``ggplots`` package for R.
+
+__IMPORTANT:__  
+To plot the Test-Set , also the Scatter Points of Test-Set and the Linear Regression we should NOT change the LINE-68 and 69 in ``simple_linear_regression.R`` the ``training_set`` to ``test-set``.
+
+BECAUSE OUR MODEL IS ALREADY TRAINED ON TRAINING-SET, IF WE REPLACE THE TRAINING-SET WITH TEST-SET IN LINE-68 AND 69 IN ``simple_linear_regression.R`` WE OBTAIN THE SAME RESULT! 
+
+INDEED IF WE REPLACE HERE THE TRAINING-SET WITH TEST-SET WE WOULD JUST BUILD SOME NEW POINTS OF THIS REGRESSION LINE CORRESPONDING TO PREDICTIONS, BECAUSE WHEN WE TRAINED OUR SIMPLE LINEAR REGRESSOR ON THE TRAINING SET WE OBTAINED ONE UNIQUE MODEL EQUATION.
+___
+
 
 ## 2.2. Multiple Linear Regression
 ...
