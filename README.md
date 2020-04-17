@@ -484,11 +484,17 @@ ___
 Now we should compare the Prediction (``y_pred``) with ``y_test`` (y_test is the real data)
 ___
 
-### 2.1.6. Simple Linear Regression in Python - Step 4
-### 2.1.7. Simple Linear Regression in R - Step 1
-### 2.1.8. Simple Linear Regression in R - Step 2
-### 2.1.9. Simple Linear Regression in R - Step 3
-### 2.1.10. Simple Linear Regression in R - Step 4
+### 2.1.6. Py - Visualizing Data
+* ``pyplot.show()`` To Notify Python that we are at the end of creating a plot and we want to show it! 
+
+![salary_xp_trainingset](./chapter2_regression/chapter2-1_linear_regression/python/plots/salay_xp_trainingset_linear_reg.png)
+___
+___
+
+### 2.1.7. R - Simple Linear Regression -
+### 2.1.8. R - Simple Linear Regression -
+### 2.1.9. R - Simple Linear Regression -
+
 ___
 
 
