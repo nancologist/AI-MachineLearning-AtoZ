@@ -1,9 +1,10 @@
 # Data Preprocessing 
 
-# Importing the dataset
+# Importing the dataset ++++++++++++++++++++++++++++++++++++++
 dataset <- read.csv('Data.csv')
 
-# Handling Missing Data
+
+# Handling Missing Data ++++++++++++++++++++++++++++++++++++++
 dataset$Age <- ifelse(
     is.na(dataset$Age),
     ave(dataset$Age, FUN = function(x) mean(x, na.rm = TRUE)),
@@ -16,7 +17,8 @@ dataset$Salary <- ifelse(
     dataset$Salary
 )
 
-# Encoding Categorical Data
+
+# Encoding Categorical Data ++++++++++++++++++++++++++++++++++
 dataset$Country = factor(
     dataset$Country,
     levels = c('France', 'Spain', 'Germany'),
@@ -29,5 +31,9 @@ dataset$Purchased = factor(
     labels = c(0, 1)
 )
 
+# One-Hot-Encode
+#for(unique_value in unique(dataset$Country)){
+#    dataset[paste("Country", unique_value, sep = ".")] <- ifelse(dataset$Country == unique_value, 1, 0)
+#}
 
 
