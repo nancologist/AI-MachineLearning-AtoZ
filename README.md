@@ -419,6 +419,51 @@ SOME HOW WE'RE ACTUALLY USING OBSERVATIONS THAT WE HAVE TO FIND THE BEST FITTING
 ___
 
 ### 2.1.2. Simple Linear Regression Intuition - Step 2
+
+![linear_regression_HOW_works](./images/linear_regression_03.png)
+
+#### 2.1.2.1 How Find Best Fitting Line
+HOW THE LINEAR REGRESSION BEING A TREND LINE THAT BEST FITS YOUR DATA.
+
+Today we'll find out how to find the best fitting light or in fact how the simple linear regression finds that line for you.
+
+So here's our simple your aggression. The same chart salary versus experience. We've got these red dots which represent the actual observations that we have in our data and we've got the TREND LINE WHICH REPRESENTS THE BEST FITTING LINE OR THE SIMPLE LINEAR REGRESSION MODEL.
+
+So now let's draw some vertical lines from the actual observations to the model. And let's look at one of the specific examples to understand what we're talking about here. 
+
+So here you can see that the Red Cross is where that person is sitting at in terms of salary so let's say this person with 10 years of experience is earning $100000.
+
+__-Interpretation-__  
+WELL THE MODEL LINE (THE BLACK LINE), IT ACTUALLY TELLS US WHERE THAT PERSON SHOULD BE SITTING ACCORDING TO THE MODEL IN TERMS OF SALARY AND ACCORDING TO MODELS SHOULD BE A BIT LOWER. It should be somewhere without green crosses which is about maybe let's say thousand.
+
+##### 2.1.2.2. Green And Red Pluses in Diagram:
+So now the Red Cross is called ``y_i``. And that is the ACTUAL DURATION.
+
+The Green Cross is called ``y_î`` (Y_i-hat)  is THE MODEL THE OBSERVATIONAL. or THE MODELED VALUE.
+
+So basically with those that level of experience where would he be. Where does the model predict that he would be earning.
+
+And so the green line therefore is the difference between what he's actually earning and what he should be earning.
+
+So it should be what he's modeled to be earning. So therefore the green line will be the same regardless of what dependent variable you have whether it's salary or with it's grade school whatever. So it's the difference between the observed and the modeled for that level of independent variable.
+
+#### 2.1.2.3. How Linear Regression Works!
+Now to get this best fitting line what is done is you take the sum you take each one of those green lines are those distances (``y_i - y-î``) you square them and then you take some of those squares.
+
+Once you have the sum of the squares for you got to find the MINIMUM of this ``SUM``!
+
+So basically what a simple linear regression does is it draws lots and lots and lots of these lines. These trend lines all this is like a simplistic way of imagining the linear regression draws all these all possible trend trend lines (_Mori: Trend Lines are those vertical green lines!_) and counts the sum of those squares every single time.
+
+And it store these SUMs somewhere in a temporary you know file or something like that and then 
+
+IT FINDS THE MINIMUM ONE SO IT LOOKS FOR THE MINIMUM SUM OF SQUARES AND FINDS A LINE WHICH HAS THE SMALLEST SUM OF SQUARES POSSIBLE.
+
+and that line will be the best fitting line and that is called the ordinary least squares method.
+
+So that's how the simple linear regression works and look for you on the next tutorial.
+
+___
+
 ### 2.1.3. Simple Linear Regression in Python - Step 1
 ### 2.1.4. Simple Linear Regression in Python - Step 2
 ### 2.1.5. Simple Linear Regression in Python - Step 3
