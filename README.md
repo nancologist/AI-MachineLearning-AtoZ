@@ -474,7 +474,10 @@ ___
 Building a simply linear regression model which will be trained to understand the correlation between the years of experience and the salary.
 ___
 
-### 2.1.4. Simple Linear Regression in Python - Step 2
+### 2.1.4. Simple Linear Regression in Python - Train Model
+ERROR: ``X = dataset.iloc[:, 1].values`` had created a 1D array but for the ``linear_regression.fit()`` the ``X`` should be a 2D array. so i changed it to: ``X = dataset.iloc[:, 0:1].values``
+___
+
 ### 2.1.5. Simple Linear Regression in Python - Step 3
 ### 2.1.6. Simple Linear Regression in Python - Step 4
 ### 2.1.7. Simple Linear Regression in R - Step 1
