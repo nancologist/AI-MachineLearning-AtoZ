@@ -321,6 +321,17 @@ ave(v1) # returns 4, 4, 4
 ___
 
 ### 1.10.4. R - Encoding Categorical Data
+#### factor()
+This function turns your categorical data (like Country and Purchased Features) into Numbers, so that your ML Model can use them in Training.
+
+### One Hot Encoding in R 
+Source: https://www.analytics-link.com/post/2017/08/25/how-to-r-one-hot-encoding  
+```r
+for(unique_value in unique(mydata$nationality)){
+ 
+mydata[paste("nationality", unique_value, sep = ".")] <- ifelse(mydata$nationality == unique_value, 1, 0)
+}
+```
 ___
 
 ### 1.10.5. R - Splitting the dataset into the Training set and Test set
