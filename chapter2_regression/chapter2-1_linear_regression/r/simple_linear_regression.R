@@ -14,4 +14,17 @@ test_set <- subset(dataset, splitter == FALSE)
 
 
 # Fit Simple Linear Regression to Training Set ++++++++++++++++++++
-linear_regressor <- lm(formula = Salary ~ YearsExpriens, data = training_set)
+linear_regressor <- lm(formula = Salary ~ YearsExperience, data = training_set)
+summary(linear_regressor)
+
+
+# Predicting ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+y_pred <- predict(linear_regressor, newdata = test_set)
+
+
+
+
+
+
+
+

@@ -526,7 +526,7 @@ And here we can see that Pr() value for the ``YearsExperience`` (Independent Var
 
 ___
 
-### 2.1.9. R - Simple Linear Regression -
+### 2.1.9. R - Predicting Test-Set Result
 
 ___
 
