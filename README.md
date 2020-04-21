@@ -577,7 +577,19 @@ __So basically you helping them create a model based off of this sample that wil
     
     
 ___
-### 2.2.2. Multiple Linear Regression Intuition - Part 2
+
+### 2.2.2. Explaining Multiple Linear Regression
+![multi linear regression](./images/multiple_lin_reg_01.png)
+
+Multiple linear regression the same thing like simple linear regression but many variables so b0 is constant and then many combinations or many pairs of B and X and it can go up to quite a lot DEPENDS ON HOW MANY REGRESSORS YOU HAVE HERE.
+
+Once again you've got a dependent variable y, so something you're explaining but this time the difference is that you think there might be a few causation.
+
+So in the case of salary for instance it could be how much years of experience you've done how many other courses you've done, how much you know how much time you spend at work or things like that or how valuable how much money you make for the company in terms of a Student and his grades if your dependent variable is ``y =`` What grade does a student get. and the independent variables could be how much the student has studied for the exam maybe how much he has slept before the exam how many lectures he has attended throughout the course and the things like that.
+
+The constant (b0) is still there and also you've got the coefficients (b1, b2, ...).
+___
+
 ### 2.2.3. Multiple Linear Regression Intuition - Part 3
 ### 2.2.4. Multiple Linear Regression Intuition - Part 4
 ### 2.2.5. Prerequisite: What is the P-Value?
