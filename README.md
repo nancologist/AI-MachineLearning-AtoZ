@@ -602,7 +602,21 @@ Attention! Your data should have the following conditions so that using the Line
 (\* Mori: I should look at these subjects later...)
 ___
 
-### 2.2.4. Multiple Linear Regression Intuition - Part 4
+### 2.2.4. Dummy Variables & Dummy Variables Trap
+![multi linear regression](./images/dummy_variable.png)
+
+Like in the last chapter we ONE-HOT-ENCODE the categorical variables. But ATTENTION! If we have two categorical variable we put just ONE of them in the equation (for example New York = D1) , so D1 can be 0 or 1.
+
+SO WE DON'T NEED A DUMMY VAR ALSO FOR CALIFORNIA BECAUSE WHEN IT'S NOT NEW YORK SO THIS CHANGES THE EQUATION TO ANOTHER STATE. SO THERE'S NO NEED FOR A D2!
+
+#### WHY N-1 DUMMY VARIABLES (N = Number of Categorical Variables in a Column)
+So if you add a ``b5 * D2`` you are DUPLICATING THE ``CALIFORNIA`` because ``D2 = 1 - D1``.
+
+#### Multicollinearity
+The phenomenon where one or several independent variables in a linear regression predict another is called __MULTICOLLINEARITY__.  
+As a result of this effect. The Model can not distinguish the effects of D1 from the effects of D2. And this is called DUMMY VARIABLE TRAP
+___
+
 ### 2.2.5. Prerequisite: What is the P-Value?
 ### 2.2.6. Multiple Linear Regression Intuition - Part 5
 ### 2.2.7. Multiple Linear Regression in Python - Step 1
