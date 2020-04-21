@@ -550,7 +550,33 @@ ___
 
 
 ## 2.2. Multiple Linear Regression
-### 2.2.1. Multiple Linear Regression Intuition - Part 1
+### 2.2.1. Explaining Data - 50 Startups
+This is about 50 companies the table has 5 Columns which shows how much these companies spend in R&D (Research & Development), Administration and Marketing and the how much Profit (Dependent Value) they gained in that year.
+
+There's a Venture Capitalist Fund (VCF) that has hired you as a data scientist. You should find out:
+
+* Which types of companies it is more interested in INVESTING and their main criteria is PROFIT.
+
+* So you have to create a model which tells you about Profit based on these independent data.
+
+* They are not just looking at the Highest Profit. But what they are looking for is:
+    1. They want to understand IN WHICH STATE A COMPANY PERFORMS BETTER? 
+    
+    2. Or which companies perform better ignoring the state , in which the companies are, (as they were in teh same state.) So for example they want to know IS THE COMPANY WHICH INVEST MORE IN MARKETING BETTER? OR THE COMPANY WHICH INVESTS IN THE ADMIN? OR THE ONE WHICH INVEST MORE IN R&D?
+    
+    3. They want also to understand 
+    
+#### Example
+Based on your model that you'll create they will have a They'll set up a set of guidelines for their own venture capitalist fund. 
+
+And they'll be for example say this: 
+
+_OK SO WE ARE MORE INTERESTED IN COMPANIES WHICH WORK OR OPERATE IN NEW YORK AND THAT HAVE A VERY LOW ADMINISTRATION SPEND AND A VERY HIGH R&D SPEND, MEANS THE R&D SPEND HAS TO BE MUCH HIGHER THAN ADMINISTRATION MARKING SPEND_
+
+__So basically you helping them create a model based off of this sample that will allow them to assess where and in which into which companies they want to invest to achieve their goal of maximizing profit.__
+    
+    
+___
 ### 2.2.2. Multiple Linear Regression Intuition - Part 2
 ### 2.2.3. Multiple Linear Regression Intuition - Part 3
 ### 2.2.4. Multiple Linear Regression Intuition - Part 4
