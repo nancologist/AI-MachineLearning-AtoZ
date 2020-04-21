@@ -550,7 +550,23 @@ ___
 
 
 ## 2.2. Multiple Linear Regression
-...
+### 2.2.1. Multiple Linear Regression Intuition - Part 1
+### 2.2.2. Multiple Linear Regression Intuition - Part 2
+### 2.2.3. Multiple Linear Regression Intuition - Part 3
+### 2.2.4. Multiple Linear Regression Intuition - Part 4
+### 2.2.5. Prerequisite: What is the P-Value?
+### 2.2.6. Multiple Linear Regression Intuition - Part 5
+### 2.2.7. Multiple Linear Regression in Python - Step 1
+### 2.2.8 Multiple Linear Regression in Python - Step 2
+### 2.2.9. Multiple Linear Regression in Python - Step 3
+### 2.2.10. Multiple Linear Regression in Python - Step 4
+### 2.2.11. Multiple Linear Regression in Python - Automatic Backward Elimination
+### 2.2.12. Multiple Linear Regression in R - Step 1
+### 2.2.13. Multiple Linear Regression in R - Step 2
+### 2.2.14. Multiple Linear Regression in R - Step 3
+### 2.2.15. Multiple Linear Regression in R - Backward Elimination - HOMEWORK !
+### 2.2.18. Multiple Linear Regression in R - Backward Elimination - Homework Solution
+### 2.2.19. Multiple Linear Regression in R - Automatic Backward Elimination
 ___
 
 ## 2.3. Polynomial Regression
