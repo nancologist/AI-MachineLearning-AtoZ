@@ -590,7 +590,18 @@ So in the case of salary for instance it could be how much years of experience y
 The constant (b0) is still there and also you've got the coefficients (b1, b2, ...).
 ___
 
-### 2.2.3. Multiple Linear Regression Intuition - Part 3
+### 2.2.3. Conditions for Using Multiple Linear Regression *
+Attention! Your data should have the following conditions so that using the Linear Regression for the Model would be suitable:
+
+1. LINEARITY
+2. HOMOSCEDASTICITY
+3. MULTIVARIATE NORMALITY
+4. INDEPENDENCE OF ERRORS
+5. LACK OF MULTICOLLINEARITY
+
+(\* Mori: I should look at these subjects later...)
+___
+
 ### 2.2.4. Multiple Linear Regression Intuition - Part 4
 ### 2.2.5. Prerequisite: What is the P-Value?
 ### 2.2.6. Multiple Linear Regression Intuition - Part 5
