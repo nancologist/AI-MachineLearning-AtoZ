@@ -617,7 +617,25 @@ The phenomenon where one or several independent variables in a linear regression
 As a result of this effect. The Model can not distinguish the effects of D1 from the effects of D2. And this is called DUMMY VARIABLE TRAP
 ___
 
-### 2.2.5. Prerequisite: What is the P-Value?
+### 2.2.5. What is the P-Value?
+#### Definitions
+* __Null Hypothesis:__  
+    The hypothesis that there is no relationship between the experimental variable(s) and the observed results.
+    
+* __Degrees of Freedom:__  
+    The equation for degrees of freedom is Degrees of freedom = n-1, where "n" is the number of categories or variables being analyzed in your experiment.
+
+* __Significance Level:__  
+    By convention, scientists usually set the significance value for their experiments at 0.05, or 5 percent. This means that experimental results that meet this significance level have, at most, a 5% chance of being reproduced in a random sampling process.
+    
+* __P Values:__  
+    * Usually, if the P value of a data set is below a certain pre-determined amount (like, for instance, 0.05), scientists will reject the "null hypothesis" of their experiment - in other words, they'll rule out the hypothesis that the variables of their experiment had no meaningful effect on the results.
+    
+    * If your P VALUE is LOWER than your SIGNIFICANCE VALUE, CONGRATULATIONS! - you've shown that your experimental results would be highly unlikely to occur if there was no real connection between the variables you manipulated and the effect you observed. BUT IF YOUR P VALUE IS HIGHER THAN YOUR SIGNIFICANCE VALUE, YOU CAN'T CONFIDENTLY MAKE THAT CLAIM.
+    
+MORI: PLEASE READ THE PDF FILE IN ``articles/`` and the Step 1 to Step 7 , BUT YOU CAN FIRST USE THE ABOVE DEFINITIONS FOR A BETTER UNDERSTANDING OF THE SUBJECTS.
+___
+
 ### 2.2.6. Multiple Linear Regression Intuition - Part 5
 ### 2.2.7. Multiple Linear Regression in Python - Step 1
 ### 2.2.8 Multiple Linear Regression in Python - Step 2
