@@ -671,7 +671,20 @@ ___
 3. Check if any feature is categorical and apply ONE HOT ENCODING there!
 ___
 
-### 2.2.8 Multiple Linear Regression in Python - Step 2
+### 2.2.8 Importing, Encoding and Splitting Data
+* ATTENTION: Here we don't have to apply Feature-Scaling. Because in the Equation of Multiple Linear Regression you have coefficients (b_i) which are multiplied to indep. variables (x_i) so that it does not matter that some feature have higher values than others, because the COEFFICIENTS COMPENSATE TO PUT EVERYTHING ON THE SAME SCALE.
+
+* _Do we need to check the assumptions of linear regression?_  
+    The answer is absolutely NO!  
+    Because I will explain at the end of this part that whenever you have a new dataset and you want to experiment with some Machine Learning Models to figure out which one leads to the highest accuracy. 
+    
+    Well even if your dataset doesn't have linear relationships you can still try a Multiple Linear Regression on it.  
+    And if you know your dataset doesn't have linear relationships well then your multiple linear regression will just perform poorly and therefore it will get an accuracy lower than the accuracy of your other models so you are going not to choose the multiple linear regression.  
+    But you don't have to check the multiple in our regression assumptions it will just be a waste of time.
+    
+    We will learn how to apply different regressions on the model and find the best one very fast.
+___
+
 ### 2.2.9. Multiple Linear Regression in Python - Step 3
 ### 2.2.10. Multiple Linear Regression in Python - Step 4
 ### 2.2.11. Multiple Linear Regression in Python - Automatic Backward Elimination
