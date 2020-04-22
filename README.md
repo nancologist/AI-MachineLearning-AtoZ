@@ -658,9 +658,19 @@ Sometimes you MUST use all variables that you got!
 * Step 3: Add the other Indep. Vars to this Simple Regression (the one with the lowest P-value) and check that again , and after this step add one more
 
 * ATTENTION : Do this until the ``P > SL`` so this means your Previous Model was the READY MODEL. THE CURRENT MODEL IS NOT THE RIGHT ONE, BECAUSE THIS HAS BROKEN THE RULE!
+
+__IN THIS CHAPTER WE ARE GOING TO USE ``BACKWARD-ELIMINATION``!__
 ___
 
-### 2.2.7. Multiple Linear Regression in Python - Step 1
+### 2.2.7. Add Data - 50 StartUps
+
+1. Always first  you need to have a to check your data with watching it (If it's not too long), so you can check that you have no missing data. 
+
+2. IF THE DATA IS TOO LANG, then apply the DATA-PREPROCESSING Tools that handle the missing data.
+
+3. Check if any feature is categorical and apply ONE HOT ENCODING there!
+___
+
 ### 2.2.8 Multiple Linear Regression in Python - Step 2
 ### 2.2.9. Multiple Linear Regression in Python - Step 3
 ### 2.2.10. Multiple Linear Regression in Python - Step 4
