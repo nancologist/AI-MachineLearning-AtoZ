@@ -31,14 +31,14 @@ X[:, 1:3] = imputer.transform(X=X[:, 1:3])
 # .transform do the REPLACING process of missing_values
 
 
-# Enconding Indepndent Feature (Country) ++++++++++++++++++++++++++++++++++++
+# Enconding Indepndent Categorical Feature (Country) ++++++++++++++++++++++++++++++++++++
 columnTransformer = ColumnTransformer(
     transformers=[('encoder', OneHotEncoder(), [0])],
     remainder='passthrough'
 )
 X = numpy.array(columnTransformer.fit_transform(X))
 
-# Encoding Dependent Feature (Target Value - y) +++++++++++++++++++++++++++++++++
+# Encoding Dependent Categorical Feature (Target Value - y) +++++++++++++++++++++++++++++++++
 labelEncoder = LabelEncoder()
 y = labelEncoder.fit_transform(y)
 
