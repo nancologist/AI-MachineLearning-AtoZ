@@ -636,7 +636,30 @@ ___
 MORI: PLEASE READ THE PDF FILE IN ``articles/`` and the Step 1 to Step 7 , BUT YOU CAN FIRST USE THE ABOVE DEFINITIONS FOR A BETTER UNDERSTANDING OF THE SUBJECTS.
 ___
 
-### 2.2.6. Multiple Linear Regression Intuition - Part 5
+#### 2.2.6. Methods of Building a Modal
+_Mori: Look at the according PDF._
+
+### PDF - Page 2: Methods
+We have 5 methods to building models. The methods 2.Backward Elimination, 3.Forward Selection and 4.Bidirectional Elimination are called Stepwise Regression (Their algorithm has loop which checks one or two conditions.)
+
+#### PDF - Page 3: "All-in" Cases
+Sometimes you MUST use all variables that you got!
+
+#### PDF - Page 4: Backward Elimination
+* In step 3 , if the PREDICTOR (variable) have a P-Value greater than Significance Level then this PREDICTOR should be removed. 
+
+* Step 5 : This is actually step 2 without the removed PREDICTOR.
+
+* If the fitted Model hit the ``P-value < Significane-Level`` then your MODEL IS READY!
+
+#### PDF - Page 5: Forward Selection
+* In step 2 you fit the y (Dep. Var.) individually with each X (Indep. Var.)
+
+* Step 3: Add the other Indep. Vars to this Simple Regression (the one with the lowest P-value) and check that again , and after this step add one more
+
+* ATTENTION : Do this until the ``P > SL`` so this means your Previous Model was the READY MODEL. THE CURRENT MODEL IS NOT THE RIGHT ONE, BECAUSE THIS HAS BROKEN THE RULE!
+___
+
 ### 2.2.7. Multiple Linear Regression in Python - Step 1
 ### 2.2.8 Multiple Linear Regression in Python - Step 2
 ### 2.2.9. Multiple Linear Regression in Python - Step 3
