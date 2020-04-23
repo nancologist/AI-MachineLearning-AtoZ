@@ -4,6 +4,7 @@ import matplotlib.pyplot as pyplot
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
 
 # Import Data ++++++++++++++++++++++++++++++++++++++++++++++++++++
 dataset = pandas.read_csv('./data/50_StartUps.csv')
@@ -20,3 +21,8 @@ X = numpy.array(colTransformer.fit_transform(X))
 
 # Splitting Data Sets for Training and Test ++++++++++++++++++++++++
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+
+
+# Train Model +++++++++++++++++++++++++++++++++++++++++++++++++++++
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)

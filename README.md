@@ -685,9 +685,26 @@ ___
     We will learn how to apply different regressions on the model and find the best one very fast.
 ___
 
-### 2.2.9. Multiple Linear Regression in Python - Step 3
+### 2.2.9. Train Model (Multiple Linear Regression)
+* Do we need to do something to avoid the Dummy Variable Trap?  
+
+    The answer is no. Because the Mutli-Lin-Reg Class which we are going to avoid this trap! (So it removes one of the three one-hot-encoded columns)
+    
+* Do we need to work on the Features (Indep. Vars) like applying the Backward Elimination technique in order to select the features which have the lowest P-values (statistically significant)?
+
+    The answer is again NO! The Class of Multi Linear Regression will take care of that and finds the Most Statistically Significant Indep Vars).
+    
+* Here we use the same Class as in the Simple Linear Regression and it detects that here we have multiple Ind. Vars (Xs)
+
+* Plot? Here we can not plot like the last section (Simple Linear Regression) because here we have multiple lines, but what we are going to plot is a COMPARING BETWEEN REAL AND PREDICTED PROFITS of 10 datasets in Test set (50 x 0.2 = 10 Datasets).
+___
+
 ### 2.2.10. Multiple Linear Regression in Python - Step 4
 ### 2.2.11. Multiple Linear Regression in Python - Automatic Backward Elimination
+___
+___
+___
+
 ### 2.2.12. Multiple Linear Regression in R - Step 1
 ### 2.2.13. Multiple Linear Regression in R - Step 2
 ### 2.2.14. Multiple Linear Regression in R - Step 3
