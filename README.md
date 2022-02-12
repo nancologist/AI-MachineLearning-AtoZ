@@ -268,7 +268,7 @@ In each section we first start with Python and then do it with the R.
 ___
 
 ## 1.1. Getting Started
-[Data.csv](chapter1_data_preprocessing/py/data/Data.csv) : This file here is like a Retail Company which analysis "Which client purchased one of their products, so these the rows (observations) i this dataset correspond to the different customers of this employee, and their infos... and the last column is about if they bought the Product or not."  
+[Data.csv](chapter1_data-preprocessing/py/data/Data.csv) : This file here is like a Retail Company which analysis "Which client purchased one of their products, so these the rows (observations) i this dataset correspond to the different customers of this employee, and their infos... and the last column is about if they bought the Product or not."  
 
 You can see that in this there are some empty cells, which makes this data source more realistic.
 ___
@@ -535,7 +535,7 @@ and X_test looks like this:
 We can see that Feature-scaling worked and they are all in the same range (age and salary)
 ___
 
-# 2. Regression
+# 2. Linear Regression
 Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
 
 In this part, you will understand and learn how to implement the following Machine Learning Regression models:
@@ -643,4 +643,7 @@ So that's how the simple linear regression works and look for you on the next tu
 ___
 
 ## 2.3. Simple Linear Regression in Python - Step 1
+In the example `Salary_Data.csv` we have 30 dataset and the goal is to create a linear regression based on Years-of-Experience (Indep. Variable X) and Salary (Depend. Variable Y). And using that our model should predict other salaries based on other years of experiences.
 
+
+___
