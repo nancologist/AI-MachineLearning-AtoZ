@@ -1,5 +1,7 @@
 # Machine Learning A-Z: Hands-On Python & R In Data Science
 
+Install packages: `pip3 install $pkg && pip3 freeze > requirements.txt`
+
 # 0. Welcome to the course
 ## 0.2. Meet your instructors
 Hi there,
@@ -261,8 +263,14 @@ ___
 
 
 # 1. Data Preprocessing
-## 1.1. Module Introduction
+## 1.0. Module Introduction
 In each section we first start with Python and then do it with the R.
+___
+
+## 1.1. Getting Started
+[Data.csv](chapter1_data_preprocessing/py/data/Data.csv) : This file here is like a Retail Company which analysis "Which client purchased one of their products, so these the rows (observations) i this dataset correspond to the different customers of this employee, and their infos... and the last column is about if they bought the Product or not."  
+
+You can see that in this there are some empty cells, which makes this data source more realistic.
 ___
 
 ## 1.2. Importing the Libraries (Python)
@@ -278,6 +286,7 @@ So we should install these libraries which we need into our Virtual Env.:
 * ``pip install matplotlib``
 * ``pip install pandas``
 ___
+
 ## 1.3. Importing Dataset (Python)
 Data.csv : This file here is like a Retail Company which analysis "Which client purchased one of their products, so these the rows (observations) i this dataset correspond to the different customers of this employee, and their infos... and the last column is about if they bought the Product or not."
 
@@ -292,12 +301,13 @@ After importing Dataset and store it as a Data Frame we need to do these as the 
 _IN ANY DATASET WHICH YOU ARE GOING TO TRAIN A MACHINE LEARNING MODEL YOU HAVE THE ENTITIES WHICH ARE THE FEATURES AND THE DEPENDENT VARIABLE (two above steps)._
 
 ### Features (Independent Variables) - INPUT VALUES
-Features are the columns, which are the independent informations (here: Country, Age, Salary), with them you are going to PREDICT the DEPENDENT VARIABLE [Mori: For the future!].
+Features are the columns, which are the independent informations (here: Country, Age, Salary), with them you are going to PREDICT the DEPENDENT VARIABLE (here: "Purchased") [Mori: For the future!].
 
-``.ilock`` : To locate indexes  
-``.iloc[:,:-1]`` : This takes all the Rows and also all the columns of the dataset, EXCEPT the last column (which is going to be predicted)
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html  
+``.ilock[ROWS, COLUMNS]`` : To locate indexes  (iloc stands for locate indexes)
+``.iloc[:, :-1]`` : This takes all the Rows and also all the columns of the dataset, EXCEPT the last column (which is going to be predicted)
 
-### Dependent Variable - TARGET VALUE
+### Dependent Variable - TARGET VALUE (y)
 This is usually the last column of the dataset (here: PURCHASED)! Because as you may guess, this company will PREDICT some future customers are going to buy the same product based on these informations.
 
 ___

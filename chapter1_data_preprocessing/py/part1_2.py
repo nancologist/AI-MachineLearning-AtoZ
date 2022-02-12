@@ -1,12 +1,12 @@
-import numpy # as np (in Tutorial)
+import numpy  # as np (in Tutorial)
 import matplotlib.pyplot as pyplot
 import pandas
-from sklearn.impute import SimpleImputer
-from sklearn.model_selection import train_test_split
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import StandardScaler
+# from sklearn.impute import SimpleImputer
+# from sklearn.model_selection import train_test_split
+# from sklearn.compose import ColumnTransformer
+# from sklearn.preprocessing import OneHotEncoder
+# from sklearn.preprocessing import LabelEncoder
+# from sklearn.preprocessing import StandardScaler
 
 # Importing Data and store it as a Data Frame: ++++++++++++++++++++++++++++++++++
 dataset = pandas.read_csv('./data/Data.csv')
@@ -15,9 +15,9 @@ dataset = pandas.read_csv('./data/Data.csv')
 X = dataset.iloc[:, :-1].values
 
 # The Prediction (Dependent Variable) going to be compared with this (the last column of dataset):
-y = dataset.iloc[:,-1].values
+y = dataset.iloc[:, -1].values
 
-
+"""
 # Taking Care of Missing Data ++++++++++++++++++++++++++++++++++++++++++++++++
 imputer = SimpleImputer(missing_values=numpy.nan, strategy='mean')
 # numpy.nan: Empty Values in Dataset
@@ -51,3 +51,4 @@ X = standardScaler.fit_transform(X)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 # This function makes a random splitting with the given test_size
 # Attention : Just for the purpose of getting the same result we are going to set the "random_state" , otherwise we shouldn't do that.
+"""
