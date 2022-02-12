@@ -1,26 +1,7 @@
 # Machine Learning A-Z: Hands-On Python & R In Data Science
 
-# 1. Welcome to the course
-## 1.3. Why Machin Learning is the future?
-* For the Dawn of Time until 2005 the human race have created 130 EXABYTES!
-* until 2010 that number was : 1,200 EXABYTES
-* until 2015 : 7,900 EXABYTES
-* estimated for 2020 : 40,900 EXABYTES
-
-Maching Learning can help to use this huge Data more and better.
-____
-
-## 1.4. Installing R and R Studio
-1. https://cran.r-project.org/
-
-2. Download and Install R
-
-3. www.rstudio.com (IDE for R)
-
-4. Download and install RStudio
-___
-
-## 1.5. Meet your instructors
+# 0. Welcome to the course
+## 0.2. Meet your instructors
 Hi there,
 
 Hope you are enjoying the course so far!
@@ -52,8 +33,232 @@ Sincerely,
 
 Kirill Eremenko
 ___
+
+## 0.3. Learning Path
+Hey Data Scientist,
+
+SuperDataScience is bringing you a new learning experience. We know how difficult it is to carve out a career track so we’re introducing the [Machine Learning Skill Track](https://sdsclub.com/learning-paths/machine-learning-track/) to guarantee your way to success.
+
+This Skill Track is a perfect fit if you:
+* Struggle to determine the skills you need to succeed in this field,
+* Are unsure which courses are right for you,
+* Desire to arrange your learning curve efficiently and on your schedule.  
+
+Built to deliver streamlined on-the-job success, the Machine Learning Skill Track provides structured curriculums and discounted courses for in-demand Machine Learning skills.
+
+After completion, Skill Track students will walk away with the required Machine Learning skills and a complete portfolio of work to showcase in competitive job interviews.
+
+Enter this Skill Track to start saving time and money on your Machine Learning journey today.
 ___
+
+## 0.4. ML vs DL vs AI - What's the difference?
+Dear Students,
+
+Kick things off for the course by downloading a helpful cheat sheet: ‘ML vs DL vs AI — What’s the Difference?’ This download addresses one of the most popular questions we hear from students, and hopefully, it clarifies a few lingering questions for you too:
+
+/articles/OU2-Difference-Between-ML-DL-AI.pdf
+
+Enjoy ML!
 ___
+
+## 0.5. Regression Types
+Dear Students,
+
+Watch a great educational video that speaks about the difference between simple linear regression, multiple linear regression, and polynomial regression. Save this resource, or come back and revisit this lecture once you start working on some of the regression models in the course. Please find the video [here](https://www.dropbox.com/s/py3ns8ltraoexfi/Youtube%20-%20Regression%20-%20Video%20Exp%20%232.mov?dl=0).
+
+Enjoy ML!
+___
+
+## 0.6. Why Machin Learning is the future?
+* For the Dawn of Time until 2005 the human race have created 130 EXABYTES!
+* until 2010 that number was : 1,200 EXABYTES
+* until 2015 : 7,900 EXABYTES
+* estimated for 2020 : 40,900 EXABYTES
+
+Maching Learning can help to use this huge Data more and better.
+____
+
+## 0.7. Important notes, tips & tricks for this course
+Dear students,
+
+We want you to have the best learning experience during the whole journey of this course. Therefore, please find just below some important notes to understand, as well as tips & tricks to take this course in the best conditions:
+
+1. The practical activities of this course will be done in both Python and R. However, it is absolutely not required to do these practical cases in both programming languages. This course was designed so that people can learn Machine Learning whether they use Python or R in their company, their own business or any specific project. Hence everybody can get comfortable applying Machine Learning on their favorite programming language. But definitely you are not supposed to learn the two. You can do it if you want or if you need it for your work, but usually one of them is sufficient.
+
+2. If you wish to learn both programming languages, just be prepared that there are going to be some repetitions. This is normal, the reasons for this is that there are a lot of similarities between Python and R and of course the practical cases solved in this course are the same for these two programming languages. However, just bear in mind that repetitions are not that bad: you will learn a lot of concepts and techniques in this course and the fact that we repeat the same elements from one programming language to another will help these concepts stick better into your head.
+
+3. The video lectures of this course were recorded at a certain pace so that everybody can adjust the speed to learn at their own rhythm. To adjust the speed you simply need to click the following "Speed" button at the bottom left corner of the video lecture:
+
+
+    If you find the pace too slow you can increase the speed to 1.25x, 1.5x or even 2x.  
+    If you find the pace too fast you can decrease the speed to 0.75x or 0.5x.
+
+4. If there is anything unclear or if you have any question during a Lecture, please keep in mind that there is a very high chance another student asked for some clarifications on the exact same element you need. You can easily find the answer to your question by browsing the Q&A of the specific Lecture you are watching. To browse the Q&A of the Lecture you simply need to click "Browse Q&A" at the bottom of the Lecture:Once you click "Browse Q&A" you will see all the questions and answers related to this Lecture on the right side of the screen:As you can see the questions have titles so you will easily find the same question you are wondering about. If you don't find your question you can of course ask a new question in the Q&A of the Lecture you are in.
+
+We will add more tips & tricks based on our observations of students feedbacks. In the meantime we wish you the best learning experience.
+
+Enjoy Machine Learning!
+
+Kirill & Hadelin
+___
+
+## 0.8. This PDF resource will hepl you a lot!
+Dear students,
+
+We just made this Latex [PDF](/articles/Machine_Learning_A_Z_Q_A) for you which will considerably help you during your journey in this course. It contains in the first pages the whole structure of the course for you to visualize it clearly, and then 50 pages containing the answers to all the most frequently asked and most important questions, section by section.
+
+In the Table of contents, the sections of the courses are hyperlinked, so you can very easily navigate to the section you want. For example, let's say you are in Part 2 - Regression, in the Multiple Linear Regression section, and you have a question on the Intuition Lectures. Well you just need to go to the Table of contents in the PDF, then go to Part 2 and then click "2.2.1 Multiple Linear Regression Intuition". And this will redirect you to the section you are looking for in the PDF. You may not find your question exactly, but the questions and answers that you will find will definitely bring you more clarity.
+
+This PDF was written in Latex, which means it is super clean. We provided cleaned code snippets, nice charts, and all the mathematical equations to explain some concepts are written clearly.
+
+This PDF will constantly be updated. As soon as we see new important and relevant questions that are repeatedly asked, we will add them in the PDF. Just make sure to re-download it in the course from time to time.
+
+We hope this will help you and make you stronger in Machine Learning, keep up the great work!
+
+Kirill & Hadelin
+
+[PDF](/articles/Machine_Learning_A_Z_Q_A)
+___
+
+## 0.9. GET ALL THE CODES AND DATASETS HERE:
+Hello my friends,
+
+Please find below the link to the folder containing all the Python codes, R codes, and datasets of this course:
+
+https://drive.google.com/drive/folders/1OFNnrHRZPZ3unWdErjLHod8Ibv2FfG1d?usp=sharing
+
+This folder contains the Python files in .ipynb format, which is the format used to code in Python on Jupyter Notebook or Google Colaboratory.
+
+__Important Note 1:__ Please download this folder on your machine in order to get all the files, especially the datasets which we will have to upload when training the Machine Learning models. In the practical tutorials you will be guided step by step on how to navigate this folder and start coding in Python & R.
+
+__Important Note 2:__ (Python coders only): In order to open the Python files of this folder with Google Colaboratory, you need to have a Gmail account and sign in to that account. This will automatically open this folder on your Google Drive, which will indeed allow you to open the Python files with Google Colaboratory. Then once you open the file, it will be in read-only mode, so in order to code inside you just have to go to File, and then click "Save a copy in Drive...". This will create a copy of this file on your drive, inside which you will be able to code in Python.
+
+Important Note 3 (Python coders only): If you don't want to code on Google Colaboratory and prefer to code on another Python IDE like Jupyter Notebook or Spyder in Anaconda, you can find all the .ipynb files and the .py files in the folder attached at the bottom of this article.
+
+I can't wait to see you in the practical lectures.
+
+Until then, enjoy Machine Learning!
+
+Hadelin
+___
+
+
+## 0.10. Presentation of the ML A-Z folder, Colaboratory, Jupyter Notebook and Spyder
+empty
+___
+
+## 0.11. Installing R and R Studio
+1. https://cran.r-project.org/
+
+2. Download and Install R
+
+3. www.rstudio.com (IDE for R) (For PyCharm: https://www.jetbrains.com/help/pycharm/r-plugin-support.html#get-started)
+
+4. Download and install RStudio
+___
+
+## 0.12. Some Additional Resources
+Hey Data Scientist,
+
+Congrats on enrolling in the Machine Learning A-Z course!
+
+In order to ease in to this amazing field, we've selected a great episode you can listen to on your commute, at breakfast or wherever. 
+
+Click here to get started: https://www.superdatascience.com/sds-041-inspiring-journey-totally-different-background-data-science/
+
+Enjoy!
+___
+
+## 0.13. FAQBot!
+Hello Students!
+
+As an additional resource, we are working on deploying our FAQBot (Mango) to help answer any frequently asked - FAQ related questions for the course. You will see Mango (our bot) in the Q&A to help provide access to FAQ based questions and information quickly.
+
+If you have a chance, please feel free test it out using the link mentioned below as we continue training and testing. To be clear, this bot is in early-stage development. Please be aware of any inaccuracy or error while we continue to improve it.
+
+*Mango is still undergoing training, testing, and revisions.
+
+Hi everyone and welcome to our new chatbot! We are hoping to use this chatbot to help answer some of your questions related to the course, or any general course related information to help continue learning. When interacting with the chatbot, please remember that this is a model in training and we expect to have quite a few iterations, development and testing phases to help it learn. Also, please be as clear as possible when asking questions with Mango.
+
+You can ask questions such as:
+
+How can I obtain the certificate of completion?
+
+How to create a virtual environment?
+
+What is the best choice for a programming language in ML or AI?
+
+How to choose the number of hidden layers in a Neural Network?
+
+Can you explain logistic regression?
+
+Can you explain a KNN?
+
+Should I use Python, R or both?
+
+Where can I get the files for ML A-Z?
+
+
+
+But please feel free to ask other course related questions so that Mango can learn. *Please keep them course related.
+
+In addition, some other great resources for further information or assistance to help debug any error include the recommended readings, http://stackoverflow.com/, and https://datascience.stackexchange.com/. Our TA’s will do their best to help answer any questions but as DS/ML/AI engineers, becoming comfortable debugging, searching resources and documentation online will become a critical skill for success.
+
+Lastly, please be aware of any errors, or unexpected outcomes. As Data Scientists we consistently need to test, develop and improve our models. We also want to thank you for helping to test our bot, and we hope it helps answer any questions that you might have!
+
+To test Mango directly:
+
+Mango:
+
+https://www.superdatascience.com/pages/welcome-to-faqbot
+___
+
+## 0.14. Your Shortcut To Becoming A Better Data Scientist!
+Hi Students!
+
+Did you know that by participating in the Q&A it can help:
+
+Make connections with peers within the domain
+
+Reinforce course information
+
+Gain useful insight related to course content
+
+Lead to more course content completed
+
+Improve and obtain better results from specific models
+
+Have your model or customization featured in the course
+
+One main way to help become a better Data Scientist is by joining the discussions. For this, we want to mention the importance of our community of students here. We continuously see and have had students post helpful information, impressive updates and customizations to algorithms that improved results, and have witnessed connections continuously being made in the Q&A.
+
+We have even featured some students' contributions in the course itself! Imagine being able to mention in an interview, or with an employer that your model was featured in a top course in the Data Science or Artificial Intelligence domain?
+
+This leads us to our main point of adding this which is to help emphasize the importance of self learning for this domain. We can easily show you the benefits of helping others (for those of you who are interested, please see here: https://www.mentalfloss.com/article/71964/7-scientific-benefits-helping-others but, in Machine Learning, Artificial Intelligence, Data Science, and any software or programming related career, it will be a required and critical skill to be able to search and solve problems as they develop. This can include any type of common bugs from programs or issues that may pop up due. As libraries, languages and IDE’s are consistently updated, you may run into a bug every so often. This is just part of the nature of the domain that we are in.
+
+Due to this, we want to highlight the importance of self learning and accessing resources such as Google, StackOverflow (or any of the related StackExchanges), or even discussing questions amongst your fellow peers, is a phenomenal way to learn. For those of you who work in the domain, running into problems and solving them is a core method of learning. Personally, answering and debugging questions in the course has helped me become a better AI Engineer/Data Scientist and developer overall.
+
+In addition, if you would like to practice the information from the course, reinforce concepts, and discuss ideas, discussing and answering questions of your peers is another important method to help learn. This can lead to making connections, study groups and habits, and overall improving your course experience by assisting others. Research has also shown that collaboration and participation can lead to increased completion of the material in the course.
+
+To recap, participating in the Q&A in the course can help you with:
+
+Form study habits
+
+Reinforce course information and gain useful insight
+
+Make connections with peers
+
+Improve your overall course learning experience
+
+Altruism
+
+Purpose
+
+*While participating in the Q&A please abide by Udemy’s Terms and Conditions, and be courteous to all participants. We are all on different stages of learning in the course, and every question is a great opportunity to learn!
+
+We greatly appreciate all of the feedback we continuously receive and keep up the awesome work!
+___
+
 
 # 1. Data Preprocessing
 ## 1.1. Module Introduction
