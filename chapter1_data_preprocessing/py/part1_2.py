@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder
-# from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler
 
 # Importing Data and store it as a Data Frame: ++++++++++++++++++++++++++++++++++
 dataset = pandas.read_csv('./data/Data.csv')
@@ -49,15 +49,17 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # Attention : Just for the purpose of getting the same result (Course's Result and Your Result)
 # we are going to set the "random_state" to a fix value, otherwise we shouldn't do that.
 
-print(X_train)
-print(X_test)
-print(y_train)
-print(y_test)
 
-"""
 # Feature Scaling +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-## 1. Using Standardisation Method:
 standardScaler = StandardScaler()
-X = standardScaler.fit_transform(X)
-"""
 
+X_train[:, 3:] = standardScaler.fit_transform(X_train[:, 3:])  # .fit_transform() =  .fit().transform()
+# From 3rd column "age" to "salary" (the first 3 columns belongs to dummy variables
+
+X_test[:, 3:] = standardScaler.transform(X_test[:, 3:])
+# Remember the values of standard-deviation and mean in the fit_transform() are still stored in the object
+# "standardScaler", so because of that reason we don't have any "fit()" when we standardize the X_test
+
+print(X_train)
+
+print(X_test)

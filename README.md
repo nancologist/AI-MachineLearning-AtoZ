@@ -492,9 +492,47 @@ So depends on our Model sometimes we need to apply the Feature Scaling and somet
 ![feature scaling](./images/feature_scaling.png)
 
 #### Standardisation vs. Normalisation
-_Hadelin: I have had tons of experience with both and I did not observe much difference in the final accuracy and result between these two techniques._
+Which one to choose? Normalisation is recommended if you have a normal distribution in most of your features.  
+
+Standardization actually works well all the time. So we are going to use __Standardization__.
+
+VERY IMPORTANT: For Standardization we need "mean" . We are going to get the Mean of X_train and use it for standardization of both Training-set and also Test-Set (WARNING: We should not take the mean of X_test, because it would - as in the previous lecture said - lead to INFORMATION-LEAKAGE)
+
 
 ``StandardScaler()`` keeps the X as numpy.array so we don't need to apply ``numpy.array()`` in LINE-48. 
+
+
+ONE IMPORTANT QUESTION: Do we need to apply our Feature-Scaling (here: Standardization) to the Matrix of Features (OneHotEncoder)? The ANSWER is NO! Because the goal of Feature-Scaling is to have value of all features in a same range (somewhere between -3 and +3) for our categorial data which are now vectors of size 1 we don't need to apply the Feature-Scaling for them. Standardization would even make them worse (dummy variable)!
+
+Categorical Data =====(OneHotEncoding)=====> Dummy Variables (Mori: bzw. Einheitsvektoren in N*N Raum!)
+
+### Difference between fit() and transform()
+`fit()` __calculates__ the standard-deviation and the mean of each column  
+
+`transform()` maps each cell using the scaling method to its new value (using equation in the above picture)
+
+so X_train looks like this:
+
+```python
+[
+    [0.0 0.0 1.0 -0.19159184384578545 -1.0781259408412425]
+    [0.0 1.0 0.0 -0.014117293757057777 -0.07013167641635372]
+    [1.0 0.0 0.0 0.566708506533324 0.633562432710455]
+    [0.0 0.0 1.0 -0.30453019390224867 -0.30786617274297867]
+    [0.0 0.0 1.0 -1.9018011447007988 -1.420463615551582]
+    [1.0 0.0 0.0 1.1475343068237058 1.232653363453549]
+    [0.0 1.0 0.0 1.4379472069688968 1.5749910381638885]
+    [1.0 0.0 0.0 -0.7401495441200351 -0.5646194287757332]]
+```
+
+and X_test looks like this:
+
+```python
+[[0.0 1.0 0.0 -1.4661817944830124 -0.9069571034860727]
+ [1.0 0.0 0.0 -0.44973664397484414 0.2056403393225306]]
+```
+
+We can see that Feature-scaling worked and they are all in the same range (age and salary)
 ___
 
 # 2. Regression
