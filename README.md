@@ -645,5 +645,8 @@ ___
 ## 2.3. Simple Linear Regression in Python - Step 1
 In the example `Salary_Data.csv` we have 30 dataset and the goal is to create a linear regression based on Years-of-Experience (Indep. Variable X) and Salary (Depend. Variable Y). And using that our model should predict other salaries based on other years of experiences.
 
-
+In this lecture we implement:
+1. Import CSV using pandas
+2. Set the X and y
+3. Split dataset into training-set and test-set
 ___
