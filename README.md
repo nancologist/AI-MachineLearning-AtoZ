@@ -361,12 +361,14 @@ https://numpy.org/doc/stable/reference/constants.html#numpy.nan
 ___
 
 ## 1.6. Categorical Data
-What are categorical variables and how to encode categorical data, which is illustrated in Python by LabelEncoder and OneHotEncoder class from sklearn.preprocessing library, and in R the factor function to transform categorical data into numerical variables.
+What are categorical variables and how to encode categorical data, which is illustrated in Python by `LabelEncoder` and `OneHotEncoder` class from `sklearn.preprocessing` library, and in R the factor function to transform categorical data into numerical variables.
 
-### Label Encoder vs. One Hot Encoder (More)
-So in the first columnt (Country) we have some countries which can't be understood by our ML Mode. So we should make them number, we could have do that with Label Encoder which gives for example to French, Germany, Spain these numbers: 1,2,3  
+### 1.6.0. Label Encoder vs. One Hot Encoder (More)
+So in the first column (Country) we have some countries which can't be understood by our ML Model. So we should make them number, we could have do that with Label Encoder which gives for example to French, Germany, Spain these numbers: 1,2,3  
 
 Now the Problem is that our MODEL is going to misunderstand this, because it's going to compare these values! But we know that the Countries can not be compared like that! So what can help us here is ``One Hot Encoder``! This makes the string data numeric without allowing them to be compared!
+
+(Mori: One-Hot-Encoder make a Unity Matrix (`n * n`) out of the categorical values. Where `n` is going to be the number of values)
 
 IN OUR CASE the OneHotEncoder splits the Country-Column into THREE columns, because we have also 3 countries (If we had 5 Countries, the Country-Col would have been splitted into 5 columns).
 
@@ -380,7 +382,7 @@ THE ONE-HOT-ENCODER CREATES ``BINARY VECTORS`` FOR EACH COUNTRY.
     
     3. More details: ``tansformer=[(KIND_OF_TRANSFORMATION, TYPE_OF_ENCODING, COLUMNS_TO_BE_APPLIED)]``
     
-    4. fit_transform() : It does the both FITTING and TRANSFORMING at once! (This was not possible by ``imputer``, so there we have first used ``.fit()`` and then ``.transform()`` in LINE-24 and LINE-28)
+    4. `fit_transform()` : It does the both FITTING and TRANSFORMING at once! (This was not possible by ``imputer``, so there we have first used ``.fit()`` and then ``.transform()`` in LINE-24 and LINE-28)
     
     5. LINE-38 : We use ``numpy.array()`` because ``ColumnTransformer()`` does not do that for us. And it should be a Numpy-Array, otherwise our Model can not train with it!
     
@@ -410,6 +412,17 @@ ___
 * This transformer should be used to encode target values, i.e. ``y`` and not the input ``X``.
 
 * It can also be used to transform non-numerical labels (as long as they are hashable and comparable) to numerical labels.
+
+(Mori:
+    * Why is it ok to use LabelEncoder for a Binary Column and not OneHotEncoder?
+    
+    * Are binary values (True & False) comparable?! In my mind they are two independent states
+
+    * If we had ONLY two values in our categorical columen (for example: category = country , values: France, Germany) would it have been ok to use LabelEncoder instead of OneHotEncoder? Would it have lead to a false training for our Model?
+    
+    * Is this not ok if we use OneHotEncoder on Dependent Columns?
+)
+ANSWER: https://en.wikipedia.org/wiki/Binary_data#In_statistics
 ___
 
 ## 1.7. Feature Scaling
@@ -440,10 +453,9 @@ _Hadelin: I have had tons of experience with both and I did not observe much dif
 ``StandardScaler()`` keeps the X as numpy.array so we don't need to apply ``numpy.array()`` in LINE-48. 
 ___
 
-___
 ## 1.8. Splitting Dataset
 
-## 1.8.1 Splitting the Dataset into the Training and Test Set (Python)
+### 1.8.1 Splitting the Dataset into the Training and Test Set (Python)
 In Machine Learning we split our data to a Training-Set and a Test-Set.  
 You know that this is about the machine which is going to learn something to make predictions.
 
@@ -479,120 +491,6 @@ by
 ``from sklearn.model_selection import train_test_split`` 
 ___
 
-## 1.8.2 How is all these in R? 
-### Importing Data
-* ``read.csv(FILE_NAME)`` gives us a data frame created from imported data
-* Attention! The working directory should be set correctly.
-___
-
-### Handling Missing Data in R with ``ifelse()``-function
-``ifelse()`` returns a value with the same shape as test which is filled with elements selected from either yes or no depending on whether the element of test is TRUE or FALSE.
-  
-``ifelse(test, yes, no)``
-#### Arguments
-* ``test``    	
-an object which can be coerced to logical mode.
-
-* ``yes``	
-return values for true elements of test.
-
-* ``no``  	
-return values for false elements of test.
-___
-
-### Encoding Categorial Data - with ``factor()``
-Some data like the "Purchased" and "Country" are Categories (NOT NUMERICAL), we should assign to any of them a number, for example to the "Yes" or "No" for Purchase we can give 1 or 0 and to the countries also some numbers.
-
-### Splitting dataset into training set and test set
-Here we are going to use a package called "caTools" 
-
-#### ``sample.split() - {caTools}``
-Split data from vector Y into two sets in predefined ratio while preserving relative ratios of different labels in Y. Used to split the data used during classification into train and test subsets.
-
-Usage
- sample.split( Y, SplitRatio = 2/3, group = NULL )  
-Arguments  
-Y	  
-Vector of data labels. If there are only a few labels (as is expected) than relative ratio of data in both subsets will be the same.  
-
-SplitRatio: This sets how much of data should go to the TRAIN-set
-
-#### Return of sample.split()
-This functions returns a list of TRUE and FALSE, where TRUE means that the Observation in that row goes to the TRAIN-set and the FALSE the Observation in that row goes to the TEST-set
-___
-
-## 1.10. Data PreProcessing in R
-### 1.10.1. Dataset Description
-___
-
-### 1.10.2. R - Importing Dataset
-Instead of ``setwd()`` to set the Working Directory we can use in the bottom right window: 
-
-1. Browser to the folder of your project
-
-2. in RStudio the ``More`` button and choose
-
-3. Choose ``Set as working directory``.
-
-### R is 1-Base!
-ATTENTION: In contrary to a lot of programming languages, R is a 1-Base language this means the indexes in Data Structures and Datasets begin from 1 and NOT zero!
-___
-
-### 1.10.3. R - Taking care of Missing Data
-Same explanations like in Python part.
-
-We are going to replace the missing data with the average of their columns.
-
-#### ifelse(condition, valIfTrue, valIfFalse)
-This function works almost like a normal if-else statement, the first argument is the condition which should be evaluated.   
-One of the second and the third arguments depends on the result of the first argument will be the output of this function. 
-
-### is.na(VAR)
-This function returns TRUE if the VAR is null or nothing. Otherwise FALSE.
-
-### ave() vs. mean()
-```r
-v1 <- c(1,6,5)
-mean(v1) # returns 4
-ave(v1) # returns 4, 4, 4
-``` 
-___
-
-### 1.10.4. R - Encoding Categorical Data
-#### factor()
-This function turns your categorical data (like Country and Purchased Features) into Numbers, so that your ML Model can use them in Training.
-
-### One Hot Encoding in R 
-Source: https://www.analytics-link.com/post/2017/08/25/how-to-r-one-hot-encoding  
-```r
-for(unique_value in unique(mydata$nationality)){
- 
-mydata[paste("nationality", unique_value, sep = ".")] <- ifelse(mydata$nationality == unique_value, 1, 0)
-}
-```
-___
-
-### 1.10.5. R - Splitting the dataset into the Training set and Test set
-#### sample.split()
-To split the dataset in R using the function ``sample.split()`` we need only to set the Y as the 1st argument and the second argument should be a number between 0 and 1 to specify the share of the Training Set.
-
-By the way this function returns a vector of Trues and Falses for Observations, so if it returns for an Observation "True", this means, this Observation is chosen for the Training Set.
-___
-
-### 1.10.6. R - Feature Scaling
-Same explanation like in the Feature Scaling Python Part above.
-
-### scale()
-Here we can not simply write so :
-``training_set <- scale(training_set)`` Because the columns Country and Purchased are not Numeric yet!!! BECAUSE THE ``factor()`` IN R IS NOT A NUMERIC FUNCTION! 
-
-Solution: We are going to exclude the Country and Purchases here!
-___
-
-### 1.10.7. R - Data PreProcessing Template
-___
-___
-___
 
 # 2. Regression
 Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression.

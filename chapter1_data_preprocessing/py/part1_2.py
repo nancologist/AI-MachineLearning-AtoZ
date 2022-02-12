@@ -3,9 +3,9 @@ import matplotlib.pyplot as pyplot
 import pandas
 from sklearn.impute import SimpleImputer
 # from sklearn.model_selection import train_test_split
-# from sklearn.compose import ColumnTransformer
-# from sklearn.preprocessing import OneHotEncoder
-# from sklearn.preprocessing import LabelEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import LabelEncoder
 # from sklearn.preprocessing import StandardScaler
 
 # Importing Data and store it as a Data Frame: ++++++++++++++++++++++++++++++++++
@@ -29,18 +29,21 @@ X[:, 1:3] = imputer.transform(X=X[:, 1:3])
 # .transform do the REPLACING process of missing_values
 
 
-"""
 # Enconding Indepndent Categorical Feature (Country) ++++++++++++++++++++++++++++++++++++
 columnTransformer = ColumnTransformer(
     transformers=[('encoder', OneHotEncoder(), [0])],
     remainder='passthrough'
 )
-X = numpy.array(columnTransformer.fit_transform(X))
+
+X = numpy.array(
+    columnTransformer.fit_transform(X)
+)
 
 # Encoding Dependent Categorical Feature (Target Value - y) +++++++++++++++++++++++++++++++++
 labelEncoder = LabelEncoder()
 y = labelEncoder.fit_transform(y)
 
+"""
 # Feature Scaling +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ## 1. Using Standardisation Method:
 standardScaler = StandardScaler()
