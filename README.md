@@ -663,3 +663,26 @@ ___
 ## 2.5. Simple Linear Regression in Python - Step 3
 ``LinearRegression.predic()`
 ___
+
+## 2.6. Simple Linear Regression in Python - Step 4
+__Visualization__  
+We want make plot out of our dataset and the prediction.
+
+`pyplot.scatter(X_train, y_train, color='red')` : This will plot the red points corresponding to the real salleries in a 2D plot.
+
+Now we want to plot the Regression Line. For that we use `pyplot.plot()`
+
+`pyplot.show()` : It displays the graphic.
+
+The result of these two plots:
+
+For training set the line should looks already good, because the model has trained with these dataset
+
+![train set](./images/plot_2-6)
+
+But important is the Regression Line on the Test-Set! and it looks acceptable:
+
+![test set](./images/plot_2-6-2)
+
+Please notice that these precise lines won't happen for all the datasets! Here our dataset had intentionally some linear correlations between salary and expreience!!
+___
