@@ -547,8 +547,7 @@ In this part, you will understand and learn how to implement the following Machi
 * Decision Tree Classification
 * Random Forest Classification
 
-## 2.1. Simple Linear Regression
-### 2.1.1. Simple Linear Regression Intuition - Step 1
+## 2.1. Simple Linear Regression Intuition - Step 1
 The linear equation and the name of its components:
 ![linear_equation](./images/linear_regression_01.png)
 
@@ -556,7 +555,7 @@ So we are going to look at an Example for Linear Regression: In the following we
 
 ![linear_regression_example](./images/linear_regression_02.png)
 
-#### 2.1.1.1. Explaining The Above Diagram 
+### 2.1.1 Explaining The Above Diagram 
 So now let's look at the simple in your regression because it's the easiest one to discuss. It's very pretty straightforward you can visualize it quite well.
 
 So here we got the y and x axis. Let's look at that specific example where we have EXPERIENCE and SALARY. So experience is going to be our horizontal axis. Salary is all vertical axis and we want to understand how people's salary depends on their experience.
@@ -572,7 +571,7 @@ AND WHAT THAT ESSENTIALLY IT MEANS IS JUST PUTTING A LINE THROUGH YOUR CHART THA
 But for now this is the chart. This is the line that best fits as Darren even looks like it right.
 ___
 
-#### 2.1.1.2. Coefficient ``b_0``
+### 2.1.2 Coefficient ``b_0``
 For now let's focus on the coefficients and the caffeine and the constant.
 
 So what does the constant mean here. Well the that actually means the point where the line crosses the vertical axis and let's say it's $30000.
@@ -582,7 +581,7 @@ What does that mean. Well it means that when when experience is zero. So when as
 That means that salary will equal to $30000 when a person has no experience so soon somebody is know fresh from University and joins this company. Most likely they will have a salary about $30000.
 ___
 
-#### 2.1.1.3. Coefficient ``b_1``
+### 2.1.3. Coefficient ``b_1``
 Now what is ``b_1``, ``b_1`` IS THE SLOPE OF THE LINE. 
 
 AND SO THE STEEPER THE LINE THE MORE YOU GET MORE MONEY YOU GET PER EXTRA YEAR OF EXPERIENCE.
@@ -597,11 +596,11 @@ That's how a simple your regression works. So the core goal here is that we're n
 SOME HOW WE'RE ACTUALLY USING OBSERVATIONS THAT WE HAVE TO FIND THE BEST FITTING LINE AND WHAT BEST FITTING LINE IS WE'LL TALK ABOUT THAT IN THE NEXT TUTORIAL.
 ___
 
-### 2.1.2. Simple Linear Regression Intuition - Step 2
+## 2.2. Simple Linear Regression Intuition - Step 2
 
 ![linear_regression_HOW_works](./images/linear_regression_03.png)
 
-#### 2.1.2.1 How Find Best Fitting Line
+### 2.2.1. How Find Best Fitting Line
 HOW THE LINEAR REGRESSION BEING A TREND LINE THAT BEST FITS YOUR DATA.
 
 Today we'll find out how to find the best fitting light or in fact how the simple linear regression finds that line for you.
@@ -615,7 +614,7 @@ So here you can see that the Red Cross is where that person is sitting at in ter
 __-Interpretation-__  
 WELL THE MODEL LINE (THE BLACK LINE), IT ACTUALLY TELLS US WHERE THAT PERSON SHOULD BE SITTING ACCORDING TO THE MODEL IN TERMS OF SALARY AND ACCORDING TO MODELS SHOULD BE A BIT LOWER. It should be somewhere without green crosses which is about maybe let's say thousand.
 
-##### 2.1.2.2. Green And Red Pluses in Diagram:
+### 2.2.2. Green And Red Pluses in Diagram:
 So now the Red Cross is called ``y_i``. And that is the ACTUAL DURATION.
 
 The Green Cross is called ``y_î`` (Y_i-hat)  is THE MODEL THE OBSERVATIONAL. or THE MODELED VALUE.
@@ -626,7 +625,7 @@ And so the green line therefore is the difference between what he's actually ear
 
 So it should be what he's modeled to be earning. So therefore the green line will be the same regardless of what dependent variable you have whether it's salary or with it's grade school whatever. So it's the difference between the observed and the modeled for that level of independent variable.
 
-#### 2.1.2.3. How Linear Regression Works!
+### 2.2.3. How Linear Regression Works!
 Now to get this best fitting line what is done is you take the sum you take each one of those green lines are those distances (``y_i - y-î``) you square them and then you take some of those squares.
 
 Once you have the sum of the squares for you got to find the MINIMUM of this ``SUM``!
@@ -643,17 +642,17 @@ So that's how the simple linear regression works and look for you on the next tu
 
 ___
 
-### 2.1.3. Simple Linear Regression in Python - Importing and Splitting Data
-#### 2.1.3.1. Data
+## 2.3. Simple Linear Regression in Python - Importing and Splitting Data
+### 2.3.1. Data
 * Every Row is corresponding to an EMPLOYEE (Observation).
 * For each Employee we have two data : Years of Experience and Salary
 ___
 
-#### 2.1.3.2. Goal
+### 2.3.2. Goal
 Building a simply linear regression model which will be trained to understand the correlation between the years of experience and the salary.
 ___
 
-### 2.1.4. Simple Linear Regression in Python - Train Model
+## 2.4. Simple Linear Regression in Python - Train Model
 ERROR: ``X = dataset.iloc[:, 1].values`` had created a 1D array but for the ``linear_regression.fit()`` the ``X`` should be a 2D array. so i changed it to: ``X = dataset.iloc[:, 0:1].values``
 ___
 
@@ -666,7 +665,7 @@ ___
 ### 2.1.6. Py - Visualizing Data
 * ``pyplot.show()`` To Notify Python that we are at the end of creating a plot and we want to show it! 
 
-![salary_xp_trainingset](./chapter2_regression/chapter2-1_linear_regression/python/plots/salay_xp_trainingset_linear_reg.png)
+![salary_xp_trainingset](chapter2_regression/part1_linear_regression/python/plots/salay_xp_trainingset_linear_reg.png)
 
 FOR THE TEST-SET YOU CAN GET A SIMILAR PLOT LIKE ABOVE WITH RUNNING THE PYTHON CODE!
 
