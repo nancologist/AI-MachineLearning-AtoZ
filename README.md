@@ -425,13 +425,19 @@ ___
 ANSWER: https://en.wikipedia.org/wiki/Binary_data#In_statistics
 ___
 
-## 1.7. Splitting Dataset
+## 1.7. Splitting Dataset into the Training-Set and Test-Set
+
+__Why__ we should split data into training-set and test-set BEFORE feature-scaling?  
+(Feature Scaling simply consists of: _Scaling all your variables (features) to make sure they all take values in the same scale. This should be done to prevent one feature domainates the others, which therefore would be neglected by the ML Model._)  
+
+__Answer:__ The reason is simple. Because the Test-Set is supposed to be a __brandnew-set__, on which you are going to evaluate your ML model.  
+Feature Scaling is a technique to get the __average__ and __deviation__ of the feature to perform scaling. So if we do this before splitting the Test-Set it causes an __Information Leakage__. (Mori: As if our Machine Learning is cheating!!!)
 
 ### 1.7.1 Splitting the Dataset into the Training and Test Set (Python)
 In Machine Learning we split our data to a Training-Set and a Test-Set.  
 You know that this is about the machine which is going to learn something to make predictions.
 
-Imagine your machine learn to much on a dataset. Then we are not sure if its performance is great on a new set with a slightly different corrolations.
+Imagine your machine learn too much on a dataset. Then we are not sure if its performance is great on a new set with a slightly different corrolations.
 
 So we should always keep a part of data for the Test!
 
@@ -439,17 +445,17 @@ The performance of the Machine should not be that much different on the Test-Set
 
 BETWEEN 20% TO 30% OF DATA IS A GOOD CHOICE FOR THE TEST-PART!
 
-### How Machine Learns Now?
+### 1.7.2. How Machine Learns Now?
 Now the Machine Learning Model is going to find a CORRELATION between the X_train and y_train and with this Correlation it can predict a new_y for a new_X! or we can test it the quality of its Prediction with the X_test and y_test
 
 ___
-### WARNING - Update (Part 1-8)
+### 1.7.3. WARNING - Update (Part 1-8)
 WARNING - Update
 Dear students,
 
 in the following tutorial, the first line of code we will type will be:
 
-from sklearn.cross_validation import train_test_split 
+`from sklearn.cross_validation import train_test_split `
 
 However the "cross_validation" name is now deprecated and was replaced by "model_selection" inside the new anaconda versions.
 

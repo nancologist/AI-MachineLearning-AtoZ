@@ -2,7 +2,7 @@ import numpy  # as np (in Tutorial)
 import matplotlib.pyplot as pyplot
 import pandas
 from sklearn.impute import SimpleImputer
-# from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder
@@ -43,14 +43,21 @@ X = numpy.array(
 labelEncoder = LabelEncoder()
 y = labelEncoder.fit_transform(y)
 
+# Splitting Data +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+# This function makes a random splitting with the given test_size
+# Attention : Just for the purpose of getting the same result (Course's Result and Your Result)
+# we are going to set the "random_state" to a fix value, otherwise we shouldn't do that.
+
+print(X_train)
+print(X_test)
+print(y_train)
+print(y_test)
+
 """
 # Feature Scaling +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ## 1. Using Standardisation Method:
 standardScaler = StandardScaler()
 X = standardScaler.fit_transform(X)
-
-# Splitting Data +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
-# This function makes a random splitting with the given test_size
-# Attention : Just for the purpose of getting the same result we are going to set the "random_state" , otherwise we shouldn't do that.
 """
+
