@@ -659,3 +659,7 @@ Regression is when our model predict a continuous real value (e.g. Salary). Clas
 
 `LinearRegression.fit()` : This function train our model (`regressor` in code)
 ___
+
+## 2.5. Simple Linear Regression in Python - Step 3
+``LinearRegression.predic()`
+___
