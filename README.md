@@ -309,11 +309,29 @@ https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html
 
 ### Dependent Variable - TARGET VALUE (y)
 This is usually the last column of the dataset (here: PURCHASED)! Because as you may guess, this company will PREDICT some future customers are going to buy the same product based on these informations.
-
 ___
 
-## 1.5. Handling Missing Data
-There are some missing data, which is normal in Machine Learning! If we look at the dataset we see that the Salary in Row 4 and the Age in the Raw 6.
+## 1.4. For Python learners, summary of Object-oriented programming: classes & objects
+Hello students,
+
+For those of you interested in following the Python tutorials of this course, here is a short summary of what you need to know in Object-oriented programming. In the Python tutorials, I will be talking about classes, objects and methods. Please find below a clear explanation of what these concepts are:
+
+A class is the model of something we want to build. For example, if we make a house construction plan that gathers the instructions on how to build a house, then this construction plan is the class.
+
+An object is an instance of the class. So if we take that same example of the house construction plan, then an object is simply a house. A house (the object) that was built by following the instructions of the construction plan (the class).
+And therefore there can be many objects of the same class, because we can build many houses from the construction plan.
+
+A method is a tool we can use on the object to complete a specific action. So in this same example, a tool can be to open the main door of the house if a guest is coming. A method can also be seen as a function that is applied onto the object, takes some inputs (that were defined in the class) and returns some output.
+
+Hope this helps you get the intuition of Object-oriented programming, don't hesitate to ask for more explanations in the Q&A if anything is unclear.
+
+Kind regards,
+
+Hadelin
+___
+
+## 1.5. Taking care of Missing Data
+There are some missing data, which is normal in Machine Learning! If we look at the dataset we see that the Salary in Row 4 and the Age in the Raw 6 are missing.
 
 You can not leave it like that, because it will cause error by training the model, therefore you must handle them. There are actually several ways to handle them:
 
@@ -334,7 +352,12 @@ This is one of the important packages by the Data Preprocessing and it has very 
 ### How we handle it?
 The class from the package Scikit-Learn is called ``SimpleImputer`` , we are actually going to first import that class, then we will create an Instance of that class, this object will allow us to exactly replace the missing salary, by the average of salaries
 
-``fit(NUMERICAL_VALUES)`` It looks for the missing value and also calculate the replacement.
+* `numpy.nan` : this respresents all the missing values in a CSV  
+https://numpy.org/doc/stable/reference/constants.html#numpy.nan
+
+* `strategy='mean'` : Replace the missing_values with the average
+
+* ``fit(NUMERICAL_VALUES)`` It looks for the missing value and also calculate the replacement.
 ___
 
 ## 1.6. Categorical Data
