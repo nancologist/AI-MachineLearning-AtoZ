@@ -650,3 +650,12 @@ In this lecture we implement:
 2. Set the X and y
 3. Split dataset into training-set and test-set
 ___
+
+## 2.4. Simple Linear Regression in Python - Step 2
+Now in this lecture we want to TRAIN our model!
+
+__Regression vs. Classification__  
+Regression is when our model predict a continuous real value (e.g. Salary). Classification is when the model predict the category/class (We attend it in the comming lectures).
+
+`LinearRegression.fit()` : This function train our model (`regressor` in code)
+___
