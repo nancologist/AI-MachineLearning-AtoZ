@@ -725,6 +725,10 @@ Venture-Kapitalist möchte auch feststellen:
 ___
 
 ## 3.2. Multiple Linear Regression Intuition - Step 1
+Watch Video.
+
+* Multilinear-Regression: it has one Dependent Variable (DV - y) and multiple Independent Variables (IVs - x_1 , x_2, x_3 , ... , x_n)
+___
 
 ## 3.3. Multiple Linear Regression Intuition - Step 2
 
