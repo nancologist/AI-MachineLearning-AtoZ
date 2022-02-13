@@ -731,7 +731,7 @@ Watch Video. Topic: Multi-Linear Equation
 ___
 
 ## 3.3. Multiple Linear Regression Intuition - Step 2
-Assumptions of Linear Regressions:
+**Assumptions of Linear Regressions:**
 
 1. Linearity
 2. Homoscedasticity
@@ -741,6 +741,11 @@ Assumptions of Linear Regressions:
 ___
 
 ## 3.4. Multiple Linear Regression Intuition - Step 3
+**Dummy Variables:**
+
+* "state" is a categorical variables
+* To let a categorical variable participate in a regression, you should make __dummy variables__ out of it.
+___
 
 ## 3.5. Multiple Linear Regression Intuition - Step 4
 
