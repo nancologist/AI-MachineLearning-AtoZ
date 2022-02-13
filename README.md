@@ -748,6 +748,8 @@ ___
 ___
 
 ## 3.5. Multiple Linear Regression Intuition - Step 4
+You should always have one dummy variable less than number of your categorical values of the feature. For example if you have 5 States , you should have 4 dummy variables.
+___
 
 ## 3.6. Understanding the P-Value
 
