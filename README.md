@@ -783,6 +783,62 @@ But in the H_1 universe the probablities would have been different. For example 
 ___
 
 ## 3.7. Multiple Linear Regression Intuition - Step 5
+__Building A Model (Step by step)__
+
+5 steps/methods of building models:  
+1. All-in
+2. Backward Elimination
+3. Forward Selection
+4. Bidirectional Elimination
+5. Score Comparison
+
+**Note:** sometimes the steps 2,3,4 are called: __Stepwise Regression__.  
+Sometimes only step 4 is called Stepwise Regression.
+
+### 3.7.1. "All-in" cases
+This is where you throw all the variables to your model. For example in case of:  
+
+* Prior knowledge: if you know that these exact variables are your true predictors. You might know it from domain knowledge or etc...
+
+* You have to! Maybe there are some frameworks in your company that compelse you to use all those variables. In another word, when it's not your decision to choose the variables.
+
+* Preparing for the __Backward Elimination__
+
+### 3.7.2. Backward Elimination
+Steps of backward elimination:  
+1. Select a __significance level__ to stay in the model (e.g. SL = 0.05)
+2. Fit the full model with all possible predictors (put all variables in your model)
+3. Consider the predictor with the **highest** P-value. If `P > SL`, go to next step, otherwise END (Your model is ready!).
+   (Mori: shouldn't it be `P < SL`?!)
+4. Remove the predictor
+5. Fit model without this variable*
+6. Go back to Step 3.
+
+### 3.7.3. Forward Selection
+1. Select a significance level to enter the model (e.g. SL = 0.05)
+2. Fit all simple regression models `y ~ x_n`. Select the one with the lowest P-value
+3. Keep this variable and fit all possible models with one extra predictor added to the one(s) you already have.
+4. Consider the predictor with the lowest P-value. If `P < SL`, go to STEP 3, otherwise END. (Kepp the previous Model, because the currenct Model has an insignificant variable with P > SL)
+
+### 3.7.4. Bidirectional Elimination
+1. Select a significance level to **enter** and to **stay** in the model. e.g.: SLENTER = 0.05 , SLSTAY = 0.05
+2. Perform the next step of the Forward Selection (new variables must have: **P < SLENTER** to enter)
+3. Perform ALL steps of Backward Elimination (old variables must have **P < SLSTAY** to stay)
+4. Go back to Step2
+5. In some point of the process: **No new variables can enter and no old variables can exit** . So it's END. Your model is ready!
+___
+
+Another approach: __All Possible Models__  
+This is the most-resource-consuming approach.  
+Steps:
+
+1. Select a criterion of goodness of fit (e.g. Akaike criterion)
+2. Construct all possible regression models: `2^n - 1` total combinations
+3. Select the one with the best crietrion
+4. Your Model is Ready
+
+It sounds easy but imagine you have 10 independent variables, you would then have 1023 MODELS!!!!!
+___
 
 ## 3.8. Make sure you have your Machine Learning A-Z folder ready
 
@@ -797,16 +853,4 @@ ___
 ## 3.13. Multiple Linear Regression in Python - Backward Elimination
 
 ## 3.14. Multiple Linear Regression in Python - EXTRA CONTENT
-
-## 3.15. Multiple Linear Regression in R - Step 1
-
-## 3.16. Multiple Linear Regression in R - Step 2
-
-## 3.17. Multiple Linear Regression in R - Step 3
-
-## 3.18. Multiple Linear Regression in R - Backward Elimination - HOMEWORK !
-
-## 3.19. Multiple Linear Regression in R - Backward Elimination - Homework Solution
-
-## 3.20. Multiple Linear Regression in R - Automatic Backward Elimination
 ___
