@@ -752,6 +752,35 @@ You should always have one dummy variable less than number of your categorical v
 ___
 
 ## 3.6. Understanding the P-Value
+**Statistical Significance**
+
+There's always a question you should ask yourself: _Are my results statistically significant or not?_  
+
+Let's take the example: "Coin Toss" (Sekke bala andakhtan)  
+We want to imagine two possible hypothesis:  
+1. H_0 : This is a fair coin
+2. H_1 : This is not a fair coin
+
+We assume that H_0 is true. (So it's a fair coin)  
+In this hypothesis the occuring of head/tail is 50%  
+
+imagine the following occurances:
+
+* First-Time: it's tail (probability: 0.5)
+* Second-Time: it's again tail! (probability of these two occurances: 0.25)
+* Third-Time: it's again tail!! (p: 0.12)
+* Fourth-Time: it's again tail!!!! (p: 0.06)
+* Fifth-Time: it's again tail!!!!! (p: 0.03)
+* 6th-Time: it's tail again!!! (p: 0.01)
+
+and these values are **P-Value**
+
+![p value](./images/p-value.png)
+
+In the above occurances you may have been got suspicious that we are really in universe of H_0 (you start thinking that it's maybe H_1). So you could have say "Any probabiliy under 5% is not random (is not H_0 anymore)" so __5%__ is your STATISTICAL SIGNIFICANCE here. So you reject the happening of 5 or 6 time Tail behind each other and you actually reject that this is the Universe with H_0 hypothesis and you claim in such a situation you are in H_1 hypothesis.
+
+But in the H_1 universe the probablities would have been different. For example occuring of 6 times Tail behind each other could be 35% !
+___
 
 ## 3.7. Multiple Linear Regression Intuition - Step 5
 
