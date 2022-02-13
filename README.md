@@ -725,12 +725,20 @@ Venture-Kapitalist möchte auch feststellen:
 ___
 
 ## 3.2. Multiple Linear Regression Intuition - Step 1
-Watch Video.
+Watch Video. Topic: Multi-Linear Equation
 
 * Multilinear-Regression: it has one Dependent Variable (DV - y) and multiple Independent Variables (IVs - x_1 , x_2, x_3 , ... , x_n)
 ___
 
 ## 3.3. Multiple Linear Regression Intuition - Step 2
+Assumptions of Linear Regressions:
+
+1. Linearity
+2. Homoscedasticity
+3. Multivariate normality
+4. Independence of errors
+5. Lack of multicollinearity
+___
 
 ## 3.4. Multiple Linear Regression Intuition - Step 3
 
