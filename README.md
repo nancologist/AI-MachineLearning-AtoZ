@@ -785,12 +785,12 @@ ___
 ## 3.7. Multiple Linear Regression Intuition - Step 5
 __Building A Model (Step by step)__
 
-5 steps/methods of building models:  
-1. All-in
-2. Backward Elimination
-3. Forward Selection
-4. Bidirectional Elimination
-5. Score Comparison
+5 methods of building models:  
+* All-in
+* Backward Elimination 
+* Forward Selection 
+* Bidirectional Elimination 
+* Score Comparison
 
 **Note:** sometimes the steps 2,3,4 are called: __Stepwise Regression__.  
 Sometimes only step 4 is called Stepwise Regression.
@@ -838,9 +838,13 @@ Steps:
 4. Your Model is Ready
 
 It sounds easy but imagine you have 10 independent variables, you would then have 1023 MODELS!!!!!
+
+In this course we are going to use __Backward Elimination__, because it's the fastest one out of these methods.
 ___
 
 ## 3.8. Make sure you have your Machine Learning A-Z folder ready
+empty
+___
 
 ## 3.9. Multiple Linear Regression in Python - Step 1
 
