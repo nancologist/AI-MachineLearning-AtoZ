@@ -708,6 +708,21 @@ ___
 # 3. Multiple Linear Regression
 
 ## 3.1. Dataset + Business Problem Description
+This is like a very realistic life-like challenge.
+
+* We have 50 companies
+* The first 3 features are their costs. (i.e. R&D Spend, Administration, Marketing Spend)
+* One categorical feaature, i.e. "state"
+* and the dependent feature (y), which our Model should at the end predict: __Profit__
+
+Aufgabe: Ein Investition-Unternehmen (Venture-Kapitalist) hat Sie als Data-Scienstist eingestellt um herauszufinden, Investieren in welche
+von diesen 50 Firmen sinnvoller waere (auf der Basis von "Profit")  
+
+Venture-Kapitalist möchte auch feststellen:
+* Wo eine Firma besser leistet? (zB in Kalifornien oder New York ?)
+* Wie ist die direkte Beziehung zwischn "Marketing Spend" und "Profit" (wenn alle andere Feaatures gleich sind) ?
+* Die Ausgabe in "R&D Spend" und "Marketing Spend" , welche ergibt in einen besseren Profit?
+___
 
 ## 3.2. Multiple Linear Regression Intuition - Step 1
 
