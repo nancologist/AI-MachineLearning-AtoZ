@@ -686,3 +686,64 @@ But important is the Regression Line on the Test-Set! and it looks acceptable:
 
 Please notice that these precise lines won't happen for all the datasets! Here our dataset had intentionally some linear correlations between salary and expreience!!
 ___
+
+## 2.7. Simple Linear Regression in Python - Additional Lecture
+Hello friends!
+
+When discussing Linear Regression, two questions arise frequently from data science students, and now we’re showing you how to solve them in a free BONUS exercise.
+
+Question 1: How do I use my simple linear regression model to make a single prediction, for example, to predict the salary of an employee with 12 years of experience?
+
+Question 2: How do I get the final regression equation y = b0 + b1 x with the final values of the coefficients b0 and b1?
+
+To help you tackle these common challenges, I’ve created a BONUS that addresses the concepts and steps you need to solve them—code included!
+
+Access the detailed answers to two of our most frequently asked questions in this bonus Colab file [here](https://www.superdatascience.com/pages/ml-regression-bonus-1):
+
+https://www.superdatascience.com/pages/ml-regression-bonus-1
+
+Enjoy this BONUS!
+___
+
+# 3. Multiple Linear Regression
+
+## 3.1. Dataset + Business Problem Description
+
+## 3.2. Multiple Linear Regression Intuition - Step 1
+
+## 3.3. Multiple Linear Regression Intuition - Step 2
+
+## 3.4. Multiple Linear Regression Intuition - Step 3
+
+## 3.5. Multiple Linear Regression Intuition - Step 4
+
+## 3.6. Understanding the P-Value
+
+## 3.7. Multiple Linear Regression Intuition - Step 5
+
+## 3.8. Make sure you have your Machine Learning A-Z folder ready
+
+## 3.9. Multiple Linear Regression in Python - Step 1
+
+## 3.10. Multiple Linear Regression in Python - Step 2
+
+## 3.11. Multiple Linear Regression in Python - Step 3
+
+## 3.12. Multiple Linear Regression in Python - Step 4
+
+## 3.13. Multiple Linear Regression in Python - Backward Elimination
+
+## 3.14. Multiple Linear Regression in Python - EXTRA CONTENT
+
+## 3.15. Multiple Linear Regression in R - Step 1
+
+## 3.16. Multiple Linear Regression in R - Step 2
+
+## 3.17. Multiple Linear Regression in R - Step 3
+
+## 3.18. Multiple Linear Regression in R - Backward Elimination - HOMEWORK !
+
+## 3.19. Multiple Linear Regression in R - Backward Elimination - Homework Solution
+
+## 3.20. Multiple Linear Regression in R - Automatic Backward Elimination
+___
