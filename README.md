@@ -859,6 +859,14 @@ Important Note: In Data-Preprocessing here we do NOT NEED the __feature-scaling_
 ___
 
 ## 3.11. Multiple Linear Regression in Python - Step 3
+Two important notes before creating and training the Model using multilinear regression:
+
+* We won't be affected by Dummy-Variable-Trap , because the `LinearRegression` class will take care of that.
+
+* We also don't need to use a method like __Backward Elimination__. Because again the `LinearRegression` class will calculate the best features (features with highest P-values, which are statistically most significant) by itself!
+
+GOAL: In the next leacture We will compare the vector of the 10 real profits of the test set (20% of 50 samples) and then compare it to the 10 predicted profit of these 10 test samples
+___
 
 ## 3.12. Multiple Linear Regression in Python - Step 4
 
