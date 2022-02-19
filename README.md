@@ -853,6 +853,10 @@ In feature __State__ we have 3 categories (states) which needs one-hot-encoding 
 ___
 
 ## 3.10. Multiple Linear Regression in Python - Step 2
+__Data Preprocessing__
+
+Important Note: In Data-Preprocessing here we do NOT NEED the __feature-scaling__. Because the coefficients (b1, b2, b3, ..., bn) of the independent variables (x1, x2, x3, ..., xn) will compensate the difference range of values in the data. 
+___
 
 ## 3.11. Multiple Linear Regression in Python - Step 3
 
