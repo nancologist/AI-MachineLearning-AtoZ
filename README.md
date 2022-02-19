@@ -847,6 +847,10 @@ empty
 ___
 
 ## 3.9. Multiple Linear Regression in Python - Step 1
+As we know the first phase to create and train the model is __data pre-processing__
+
+In feature __State__ we have 3 categories (states) which needs one-hot-encoding (dummy variables).
+___
 
 ## 3.10. Multiple Linear Regression in Python - Step 2
 
