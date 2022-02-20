@@ -29,3 +29,17 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # Creating and training the multi linear regression Model
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
+
+
+# Predict the test-set results
+y_pred = regressor.predict(X_test)
+y_pred = y_pred.reshape(len(y_pred), 1)  # make horizental vector vertical
+y_test = y_test.reshape(len(y_test), 1)  # make horizental vector vertical
+
+numpy.set_printoptions(precision=2)  # number of decimals to display (calculation will not be affected)
+print(
+    numpy.concatenate(
+        (y_pred, y_test),
+        1  # axis=1, it means concatanating the vectors horizentally
+    )
+)

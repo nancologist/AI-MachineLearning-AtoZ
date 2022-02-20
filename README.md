@@ -869,6 +869,29 @@ GOAL: In the next leacture We will compare the vector of the 10 real profits of 
 ___
 
 ## 3.12. Multiple Linear Regression in Python - Step 4
+`.reshape(LENGTH_OF_VECTOR, 1)` : `1` means only one column, so in this way instead of printing horizentally, we print our vector vertically!
+
+We want to concatanate ech row of y_test and y_pred (predict) to compare them.
+
+```
+[
+ [103015.2  103282.38]
+ [132582.28 144259.4 ]
+ [132447.74 146121.95]
+ [ 71976.1   77798.83]
+ [178537.48 191050.39]
+ [116161.24 105008.31]
+ [ 67851.69  81229.06]
+ [ 98791.73  97483.56]
+ [113969.44 110352.25]
+ [167921.07 166187.94]
+]
+```
+
+we can see that the first and last results are very good predictions but the others are not that exact, but still ok.
+
+So our Multi-Linear-Reg Model worked rather well!
+___
 
 ## 3.13. Multiple Linear Regression in Python - Backward Elimination
 
