@@ -1005,4 +1005,18 @@ The formula of a polynomial regression looks like this:
 `y = b_0 + b_1 * x_1 + b_2 * (x_1 ^ 2) + b_3 * (x_1 ^ 3) + ... + b_n * (x_1 ^ n)` (this is called Polynomial Linear Regression because there's no other indep. var like x_2)
 ___
 
+## 4.2. Polynomial Regression in Python - Step 1
+Data set (`Position_Salaries.csv`) : Imagine we are in a HR department and we want to hire someone. And we find out that a person would be a great fit for the position. And imagine the person is advanced and therefore asks for 160K dollor per year!  
+As the HR we will ask person why he expects such a high salary? Person replies: "Because that is what i earned in my previous company."  
+
+Is that a truth? or is that a bluff? Well, that's exactly what we are going to figure out with the help of __Polynomial Regression Model__.  
+We are going to build the poly. reg. Model __to figure out the previous salaries of this candidate__.
+
+In order to do such a prediction we have collected the salaries of the previous company of this candidate for different positions. And then we want to find out the __Salary for the `Level` 6.5__ (because the Person has been Region Manager in his company for around 2 years so his `Level` is more than 6.5)
+
+
+__IMPORTANT:__ Because here we don't have a lot of data, we WILL NOT split the data-set into training-set and test-set. Because we want to use the model to find out the __Salary for the Level 6.5__
+
+
+__IMPORTANT:__ The columns `Position` and `Level` are redundant. Because the `Level` is representing the `Postion` so we don't consider `Position` in the `X`.
 ___
