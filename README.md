@@ -996,3 +996,13 @@ Enjoy this BONUS!
 __IMPORTANT from LINE 80:__ _the dummy variables are always created 
 in the first columns._
 ___
+
+# 4. Polynomial Regression
+
+## 4.1. Polynomial Regression - Intuition
+The formula of a polynomial regression looks like this:
+
+`y = b_0 + b_1 * x_1 + b_2 * (x_1 ^ 2) + b_3 * (x_1 ^ 3) + ... + b_n * (x_1 ^ n)` (this is called Polynomial Linear Regression because there's no other indep. var like x_2)
+___
+
+___
