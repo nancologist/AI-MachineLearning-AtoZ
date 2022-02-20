@@ -977,4 +977,22 @@ Hope that can help anyway, and until then, enjoy Machine Learning!
 ___
 
 ## 3.14. Multiple Linear Regression in Python - EXTRA CONTENT
+Hello friends!
+
+When discussing Multiple Linear Regression, many questions arise frequently from data science students, and now we’re showing you how to solve them in a free BONUS exercise.
+
+**Question 1:** How do I use my multiple linear regression model to make a single prediction, for example, the profit of a startup with R&D Spend = 160000, Administration Spend = 130000, Marketing Spend = 300000 and State = California?
+
+**Question 2:** How do I get the final regression equation y = b0 + b1 x1 + b2 x2 + ... with the final values of the coefficients?
+
+To help you tackle these common challenges, I’ve created a BONUS that addresses the concepts and steps you need to solve them—code included!
+
+Access the detailed answers to two of our most frequently asked questions in this bonus Colab here (Mori: I added it to `ch3_app.py`):
+
+https://www.superdatascience.com/pages/ml-regression-bonus-2
+
+Enjoy this BONUS!
+
+__IMPORTANT from LINE 80:__ _the dummy variables are always created 
+in the first columns._
 ___
