@@ -1020,3 +1020,11 @@ __IMPORTANT:__ Because here we don't have a lot of data, we WILL NOT split the d
 
 __IMPORTANT:__ The columns `Position` and `Level` are redundant. Because the `Level` is representing the `Postion` so we don't consider `Position` in the `X`.
 ___
+
+## 4.3. Polynomial Regression in Python - Step 2
+For Polynomial Linear Regression, we consider each of x_1 , x_1 ^ 2 , x_1 ^ 3 , ... x_1 ^ n as an independent variable in the matrix of features. For that `PolynomialFeatures` class helps us. and we will cal it `X_poly`
+
+`PolynomialFeatures(degree=2)` this means: `y = b_0 + b_1 * x_1 + b_2 * x_1 ^ 2`
+
+For X_poly we can now use a new instance of Linear-Regression Model to train! That's why we call it "Polynomial Linear Regression"! Because you can map such a polynomial equation into a [multiple] Linear Regression.  
+___
