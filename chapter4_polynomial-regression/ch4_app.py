@@ -1,3 +1,4 @@
+import numpy
 import pandas
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
@@ -42,4 +43,18 @@ pyplot.plot(
 pyplot.title("Truth or Bluff (Polynomial Regression degree=2)")
 pyplot.xlabel("Position Level")
 pyplot.ylabel("Salary")
-pyplot.show()
+# pyplot.show()
+
+print('Estimation for Pos-Level=6.5 :')
+print(
+    linear_regressor.predict([[6.5]])  # => 330K $ which is way higher than what the person asked (160k)!
+)
+
+print(
+    linear_regressor_2.predict([
+        [6.5 ** 0, 6.5, 6.5 ** 2, 6.5 ** 3, 6.5 ** 4]  # => 158K $ which is almost equal to what the person asked (160k)!
+        # alternative:
+        # polynomial_regressor.fit_transform([[6.5]])
+    ])
+)
+

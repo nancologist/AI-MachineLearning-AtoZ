@@ -1040,3 +1040,6 @@ So we see that the prediction is very inaccurate above.
 
 Now if we increase the degree from 2 to 4 we see even the prediction gets better!
 ___
+
+## 4.5. Polynomial Regression in Python - Step 4
+We are going to predict the Salary of Level=6.5 using the both linear and polynomial model
