@@ -1028,3 +1028,15 @@ For Polynomial Linear Regression, we consider each of x_1 , x_1 ^ 2 , x_1 ^ 3 , 
 
 For X_poly we can now use a new instance of Linear-Regression Model to train! That's why we call it "Polynomial Linear Regression"! Because you can map such a polynomial equation into a [multiple] Linear Regression.  
 ___
+
+## 4.4. Polynomial Regression in Python - Step 3
+Now we want to visualize the results.
+
+![4-4 lin reg](/images/4-4-lin-reg.png)
+
+So we see that the prediction is very inaccurate above.
+
+![pol reg](/images/4-4-pol-reg.png)
+
+Now if we increase the degree from 2 to 4 we see even the prediction gets better!
+___
