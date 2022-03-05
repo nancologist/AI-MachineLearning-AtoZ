@@ -1043,3 +1043,27 @@ ___
 
 ## 4.5. Polynomial Regression in Python - Step 4
 We are going to predict the Salary of Level=6.5 using the both linear and polynomial model
+___
+
+# 5. Support Vector Regression (SVR)
+
+## 5.1. SVR Intuition
+* SVR = Support Vector Regression
+* Invented by Vladimir Vapnik and his collegues in 1990s.
+
+![svr explanation](images/svr-01.png)
+
+In the above picture we have the simple linear regression and how it is calculated on left.  
+The SVR (Support Vector Regression) is also very similar to that. But there we have an area above and under the linear regression line, in which we ignore the data we have to calculate our regression line, which is called __Insensitive Tube__.
+
+As a supervised-learning approach, SVR trains using a symmetrical loss function, which euqally __penalizes__ high and low misestimates. Using Vapnik's insensitive approach, a flexible tube of minimal radiu i formed symmetrically around the estimated function, such that the abolute value of errors less than a certain threshold are ignored both above and below the estimate. In this manner, points outside the tube are penalized, but those within the tube, either above or below the function, receive no penalty. __One of the main advantages of SVR is that its computational complexity does not depend on the dimensionality of the input space. Additionally, it has excellent generalization capability, with high prediction accuracy.__
+
+Read more here:
+
+![img.png](images/svr-02.png)
+___
+
+## 5.2. Heads-up non-linear SVR
+___
+
+___
