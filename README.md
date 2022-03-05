@@ -1091,12 +1091,17 @@ In SVR we MUST apply Feature-Scaling because here we DON'T have the coefficients
 We will use the whole dataset for training to maximise the prediction strength.
 ___
 
+## 5.4. SVR in Python - Step 2
+As the scale of values of salary (45000 to 1000000) is very higher than the values of position levels (1 to 10), the position level could be neglected compared to salary.  
+So we are going to apply the feature-scaling to both our independent variable x (position-level) and also to our dependent variable y (salary).
+
+__IMPORTANT:__ We need two instances of `StandardScaler()` class, one for x and one for y. Because when you fit an instance of StandardScaler() on your data, this is going to **compute the mean and standard deviation** of that same variable. Of course the `PositionLevel` and the `Salary` have different values for mean and standard deviation, so we NEED TWO instances of `StandardScaler()`.
+___
+
 ## 5.6. SVR in Python - Step 4
 If you run into ValueError when Predicting A New Result in the colab notebook for SVR please use the following snippet to reshape :
 
 `sc_y.inverse_transform(regressor.predict(sc_X.transform([[6.5]])).reshape(-1,1))`
-
-
 ___
 
 ___
