@@ -1077,6 +1077,26 @@ It will be covered later in this course:
 
 Either you can read this parts and continue or you can continue the course but keep in mind that it's going to use non-linear SVR.
 ___
+
+## 5.3. SVR in Python - Step 1
+In this section our model and data are more advance.  
+In this section we are going to use __feature scaling__ a lot!
+
+Goal: In this section we want that Model learns and predicts the correlation between the `Position-Level` and the `Salary`.
+
+(Like the last chapter) We want hire a new person, who expects 160K $ per year. And he claims that it's the salary he got in his last company for the post __Region Manager__ (Level=6). Somehow we could have find data about his last company: `Position_Salaries.csv`. However, as he has some years of experience his level is not 6 but something like `6.5`
+
+In SVR we MUST apply Feature-Scaling because here we DON'T have the coefficients to COMPENSATE the values of the features when they are not in the same scales.
+
+We will use the whole dataset for training to maximise the prediction strength.
+___
+
+## 5.6. SVR in Python - Step 4
+If you run into ValueError when Predicting A New Result in the colab notebook for SVR please use the following snippet to reshape :
+
+`sc_y.inverse_transform(regressor.predict(sc_X.transform([[6.5]])).reshape(-1,1))`
+
+
 ___
 
 ___
