@@ -1,5 +1,6 @@
 import pandas
 from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVR
 
 
 # Import dataset
@@ -16,3 +17,8 @@ sc_x = StandardScaler()
 sc_y = StandardScaler()
 X = sc_x.fit_transform(X)  # [[-1.5666989 ], [-1.21854359], [-0.87038828], [-0.52223297], [-0.17407766], [ 0.17407766], [ 0.52223297], [ 0.87038828], [ 1.21854359], [ 1.5666989 ]]
 y = sc_y.fit_transform(y)  # [[-0.72004253], [-0.70243757], [-0.66722767], [-0.59680786], [-0.49117815], [-0.35033854], [-0.17428902], [ 0.17781001], [ 0.88200808], [ 2.64250325]]
+
+
+# Train the SVR model on the whole dataset:
+svr_regressor = SVR(kernel='rbf')
+svr_regressor.fit(X, y)

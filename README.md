@@ -1098,6 +1098,22 @@ So we are going to apply the feature-scaling to both our independent variable x 
 __IMPORTANT:__ We need two instances of `StandardScaler()` class, one for x and one for y. Because when you fit an instance of StandardScaler() on your data, this is going to **compute the mean and standard deviation** of that same variable. Of course the `PositionLevel` and the `Salary` have different values for mean and standard deviation, so we NEED TWO instances of `StandardScaler()`.
 ___
 
+## 5.5. SVR in Python - Step 3
+SVR use something called __Kernel Function__, which can either learn some linear relationships and that's the linear kernel or non-liner relationships, which are the non-linear kernels such as the followings (https://data-flair.training/blogs/svm-kernel-functions/):
+
+* __Polynomial Kernel__ - adapted for non-linear dataset
+* __Gaussian Kernel__ - which is a classic gaussian function
+* __Gaussian Radial Basis Function (RBF)__ - the most widely used one (and this is the one we are going to use now)
+* __Laplace RBF Kernel__
+* __Hyperbolic Tangent Kernel__ - is a popular kernel
+* __Sigmoid Kernel__
+* __Bessel Function of First Kind Kernel__
+* __Anova Radial Basis Kernel__
+* __Linear spline kernel in 1D__
+
+The __Gaussian RBF__ is also recommendation of the course's tutor when the SVR is used for regression `SVR(kernel='rbf')`.
+___
+
 ## 5.6. SVR in Python - Step 4
 If you run into ValueError when Predicting A New Result in the colab notebook for SVR please use the following snippet to reshape :
 
