@@ -1064,6 +1064,19 @@ Read more here:
 ___
 
 ## 5.2. Heads-up non-linear SVR
+It will be covered later in this course:
+
+* Section on SVM:
+  * SVM Intuition
+* Section on Kernel SVM:
+  * Kernel SVM Intuition
+  * Mapping to a higher dimension
+  * The Kernel Trick
+  * Types of Kernel Functions
+  * Non-linear Kernel SVR
+
+Either you can read this parts and continue or you can continue the course but keep in mind that it's going to use non-linear SVR.
+___
 ___
 
 ___
