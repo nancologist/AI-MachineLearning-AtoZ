@@ -22,3 +22,10 @@ y = sc_y.fit_transform(y)  # [[-0.72004253], [-0.70243757], [-0.66722767], [-0.5
 # Train the SVR model on the whole dataset:
 svr_regressor = SVR(kernel='rbf')
 svr_regressor.fit(X, y)
+
+
+# Predict a new result:
+x_target = [[6.5]]
+x_target = sc_x.transform(x_target)  # As we have already applied the feature-scaling on our X, so we should apply it here too.
+y_predict = svr_regressor.predict(x_target).reshape(-1, 1)
+y_predict = sc_y.inverse_transform(y_predict)  # [[170370.0204065]] => 170K $

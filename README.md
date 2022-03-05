@@ -1118,6 +1118,8 @@ ___
 If you run into ValueError when Predicting A New Result in the colab notebook for SVR please use the following snippet to reshape :
 
 `sc_y.inverse_transform(regressor.predict(sc_X.transform([[6.5]])).reshape(-1,1))`
+
+Now as we scaled our `x_target` so the output `y_predict` is also scaled. To reach the right prediction we should reverse the feature-scaling on Y: `sc_y.inverse_transform()`
 ___
 
 ___
