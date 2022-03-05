@@ -1122,4 +1122,10 @@ If you run into ValueError when Predicting A New Result in the colab notebook fo
 Now as we scaled our `x_target` so the output `y_predict` is also scaled. To reach the right prediction we should reverse the feature-scaling on Y: `sc_y.inverse_transform()`
 ___
 
+## 5.7. SVR in Python - Step 5
+For the visualization we should INVERSE the feature-scaling we applied on X and y to see the correct values on the diagram.
+
+![img.png](images/svr-03.png)
+___
+
 ___

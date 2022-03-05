@@ -1,6 +1,8 @@
 import pandas
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
+from matplotlib import pyplot
+import numpy
 
 
 # Import dataset
@@ -29,3 +31,35 @@ x_target = [[6.5]]
 x_target = sc_x.transform(x_target)  # As we have already applied the feature-scaling on our X, so we should apply it here too.
 y_predict = svr_regressor.predict(x_target).reshape(-1, 1)
 y_predict = sc_y.inverse_transform(y_predict)  # [[170370.0204065]] => 170K $
+
+
+# Visualize the SVR results:
+pyplot.scatter(
+    sc_x.inverse_transform(X),
+    sc_y.inverse_transform(y),
+    color="red"
+)  # Plot scattered dataset
+
+pyplot.plot(
+    sc_x.inverse_transform(X),
+    sc_y.inverse_transform(
+        svr_regressor.predict(X).reshape(-1, 1)
+    ),
+    color="blue"
+)  # Plot SVR-regression prediction
+
+pyplot.title("Truth or Bluff (Support Vector Regression)")
+pyplot.xlabel("Position Level")
+pyplot.ylabel("Salary")
+pyplot.show()
+
+
+# Visualise the SVR results (for high resolution and smoother curve)
+X_grid = numpy.arange(min(sc_x.inverse_transform(X)), max(sc_x.inverse_transform(X)), 0.01)  # choice of 0.01 instead of 0.1 step because the data is feature scaled
+X_grid = X_grid.reshape((len(X_grid), 1))
+pyplot.scatter(sc_x.inverse_transform(X), sc_y.inverse_transform(y), color='red')
+pyplot.plot(X_grid, svr_regressor.predict(sc_x.inverse_transform(X_grid)), color='blue')
+pyplot.title('Truth or Bluff (SVR)')
+pyplot.xlabel('Position level')
+pyplot.ylabel('Salary')
+# pyplot.show()
