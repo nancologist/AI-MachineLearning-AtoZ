@@ -1176,4 +1176,8 @@ ___
 Set a value for `random_state` parameter is only for the reason to receive the same result as in the course videos.
 ___
 
+## 6.4. Decision Tree Regression in Python - Step 3
+Now it returns 150K dollar for PositionLevel 6.5 , which is NOT a good prediction. BUT if you remember we said at the beginning of this chapter that a scatter plot with only one feature is not a good use case for using decision-tree regression model.
+___
+
 ___

@@ -11,3 +11,7 @@ y = dataset.iloc[:, -1].values
 # Train the decision-tree regression model:
 dt_regressor = DecisionTreeRegressor(random_state=0)
 dt_regressor.fit(X, y)
+
+
+# Predict a new result:
+res = dt_regressor.predict([[6.5]])  # => 150K $ - Bad Prediction!
