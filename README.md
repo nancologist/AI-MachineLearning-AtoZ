@@ -1180,4 +1180,10 @@ ___
 Now it returns 150K dollar for PositionLevel 6.5 , which is NOT a good prediction. BUT if you remember we said at the beginning of this chapter that a scatter plot with only one feature is not a good use case for using decision-tree regression model.
 ___
 
+## 6.5. Decision Tree Regression in Python - Step 4
+You can see the result here and why the Decision-Tree Regression Model is not suitable for such a dataset with only one feature:
+
+![img.png](images/decision-tree5.png)
+___
+
 ___
