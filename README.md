@@ -1162,4 +1162,14 @@ so the Decision Tree of it looks like this:
 ![img.png](images/decision-tree04.png)
 ___
 
+## 6.2. Decision Tree Regression in Python - Step 1
+Again we are going to have the same dataset `Position_Salaries.csv` like in the last two chapters, so for more explanation of the problem and the challenge. Read the first section of the each two last chapters.
+
+* __NOTICE 1:__ The Decision Tree Regression is not well adapted to simple datasets like here with only one feature (independent variable)! We will see explain the problem in the visualization lecture. BUT you should not worry, because the implementation of Decision-Tree-Regression Model which we are about to build will still work on any dataset with any number of independent variables (features)
+
+* __NOTICE 2:__ You don't need to apply any __feature-scaling__ on the decision-tree-regression (and random-forest in the next chapter) model!
+
+* __NOTICE 3:__ You can but you do not need to split your data into training and test set. Because in the decision-tree and random-forest approach the __prediction is resulting from successive segmentation of the data through different nodes of your tree, so there will not be any equations like the previous models and that's also why no FEATURE SCALING is needed to split different values of features.__
+___
+
 ___
