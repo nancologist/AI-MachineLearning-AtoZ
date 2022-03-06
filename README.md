@@ -1056,7 +1056,9 @@ ___
 In the above picture we have the simple linear regression and how it is calculated on left.  
 The SVR (Support Vector Regression) is also very similar to that. But there we have an area above and under the linear regression line, in which we ignore the data we have to calculate our regression line, which is called __Insensitive Tube__.
 
-As a supervised-learning approach, SVR trains using a symmetrical loss function, which euqally __penalizes__ high and low misestimates. Using Vapnik's insensitive approach, a flexible tube of minimal radiu i formed symmetrically around the estimated function, such that the abolute value of errors less than a certain threshold are ignored both above and below the estimate. In this manner, points outside the tube are penalized, but those within the tube, either above or below the function, receive no penalty. __One of the main advantages of SVR is that its computational complexity does not depend on the dimensionality of the input space. Additionally, it has excellent generalization capability, with high prediction accuracy.__
+As a supervised-learning approach, SVR trains using a symmetrical loss function, which euqally __penalizes__ high and low misestimates. Using Vapnik's insensitive approach, a flexible tube of minimal radiu i formed symmetrically around the estimated function, such that the abolute value of errors less than a certain threshold are ignored both above and below the estimate. In this manner, points outside the tube are penalized, but those within the tube, either above or below the function, receive no penalty. __One of the main advantages of SVR is that its computational complexity does not depend on the dimensionality of the input space. Additionally, it has excellent generalization capability, with high prediction accuracy.__  
+
+__MORI:__ _So I think that's not true what the tutor in this lecture said ("inside the tube the points are going to have no effects"). They are going to have their part in calculating the Sum of Minmum y distances but outside of this tube the other points are going to suffer a penalty and that's the reason that at the end of this chapter we see in the visualization that the last point (Salary: 1Million for PositionLevel 10 does not effect the prediction curve that much, as it did in the last chapter where we OVERFITTED our polynomial regression using Power 4 or 5 of X)_ 
 
 Read more here:
 
@@ -1126,6 +1128,38 @@ ___
 For the visualization we should INVERSE the feature-scaling we applied on X and y to see the correct values on the diagram.
 
 ![img.png](images/svr-03.png)
+___
+
+___
+
+# 6. Decision Tree Regression
+
+## 6.1. Decision Tree Regression Intuition
+You may have heard "CART" which stands for Classification and Regression Tree. We are going to talk about both, but first in this chapter we talk about the Regression Tree.
+
+![img.png](images/decision-tree01.png)
+
+Imagine we have the above scatter plot (3D diagramm, the Y is sticking out of the screen and for simplicity is not presented here.). The `X_1` and `X_2` are two independent variables.  
+
+Using __decision tree__, a scatter plot will be split up into segments. The algorithm would work for example as the following:
+
+_It's going to split the scatter plot by `X_1 < 20` and then it's going to split the `X_1 > 20` into two segments `X_2 > 170` and `X_2 < 170`. and then so on Split3 and Split4 (as shown in the following picture)._
+
+![img.png](images/decision-tree02.png)
+
+The splitting will goes on, __until adding a new segment and grouping the dataset would not give us a new information__. So then it will stop splitting up the dataset.
+
+These segments (for example in the above pciture we have 5 segments) are called __leaves__. and the final leaves are called __terminal leaves__.  
+
+And then this is how the __prediction__ works according to the decision-tree method: __The average of the Y (dependent variable) in each __terminal leaf__ will be calculated. So when we add a new "dot" (dataset) to this scatter plot depending in which terminal-leaf it's going to be, the __prediction of its Y is going to be the Y-average in that terminal-leaf!__
+
+For example imagine that we have calculated the average of each terminal-leaf in the above picture and it gives us:
+
+![img.png](images/decision-tree03.png)
+
+so the Decision Tree of it looks like this:
+
+![img.png](images/decision-tree04.png)
 ___
 
 ___
