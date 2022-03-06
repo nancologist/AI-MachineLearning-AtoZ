@@ -1172,4 +1172,8 @@ Again we are going to have the same dataset `Position_Salaries.csv` like in the 
 * __NOTICE 3:__ You can but you do not need to split your data into training and test set. Because in the decision-tree and random-forest approach the __prediction is resulting from successive segmentation of the data through different nodes of your tree, so there will not be any equations like the previous models and that's also why no FEATURE SCALING is needed to split different values of features.__
 ___
 
+## 6.3. Decision Tree Regression in Python - Step 2
+Set a value for `random_state` parameter is only for the reason to receive the same result as in the course videos.
+___
+
 ___
