@@ -1216,3 +1216,35 @@ WARNING: Just like the Decision-Tree, the Random-Forst regression is best for th
 ___
 
 ___
+
+# 8. Evaluating Regression Models Performance
+
+## 8.1. R-Squared Intuition
+![r squared](images/r-squared_01.png)
+
+Until now we have learned how the regression lines or curves are calculated: _Minimizing the Sum of squared dataset-Ys minus the y on the regression line._:
+
+`SUM (y_i - y^_i)^2 --> Min`
+
+The line which gives the smallest SUM is then our regression line!  
+The value of this SUM is called: __Sum of Squared of Residuals__ and we will label it as `SS_res`  
+
+Now we can calculate the same SUM , but this time for the **average line** :
+
+![r sq 2](images/r-squared_02.png)
+
+so we are going to calculate : `SUM (y_i - y_avg)^2` and we are going to call it `SS_tot`
+
+and then now the __R-squared__ is going to be defined like this:
+
+![img.png](images/r-squared_03.png)
+
+Your __goal__ and what's you try to do with your regression is to fit a line to minimize the `SS_res` (Sum of Residuals) and so bringing the value **R-squared** as close as possible to `1`
+
+In other word the **R-squared** tells how good is your Regression-Line comparing the the Average-line.
+___
+
+## 8.2. Adjusted R-Squared Intuition
+___
+
+___
