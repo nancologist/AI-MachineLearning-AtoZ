@@ -1205,4 +1205,14 @@ In this way you are not predicting based on one __tree__, but predicting based o
 Generally __Ensemble algorithms__ are more __stable__, because the changes in a dataset could impact its tree but it could not affect the __forest__.
 ___
 
+## 7.2. Random Forest Regression in Python
+In `RandomForestRegressor()` the important parameter is `n_estimators` which sets the __number of trees__ the datasets are goint to split to them.    
+
+The goal is to find the best value for the `n_estimators` but first we can start with `10`.
+
+WARNING: Just like the Decision-Tree, the Random-Forst regression is best for the high dimensional datasets (multi features dataset), so the result of it for our currenct dataset `Position_Salaries.csv` which has only one X (one feature) is not going to be that pretty.
+
+![Random Forest](images/random-forest.png)
+___
+
 ___
