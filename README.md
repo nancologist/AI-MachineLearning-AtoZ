@@ -1187,3 +1187,22 @@ You can see the result here and why the Decision-Tree Regression Model is not su
 ___
 
 ___
+
+# 7. Random Forest Regression
+
+## 7.1. Intuition
+* Random Forest is a version of __Ensemble Learning__
+* Ensemble Learning is when you take **multiple algorithms** or the **same algorithm multiple times** together, to make something much powerful than the original algorithm.
+
+### Steps:
+1. Pick a random `K` data points from the Training set.
+2. Build a **Decision Tree** associated to these `K` data points.
+3. Choose the number N-tree of trees you want to build and repeat STEP 1 and STEP 2
+4. For a new data point, make each one of your N-tree trees predict the value of `Y` to for the data point in question, and assign the new data point the average across all of the predicted `Y` values
+
+In this way you are not predicting based on one __tree__, but predicting based on a __forest of trees__. This __improves the accuracy__ of prediction.  
+
+Generally __Ensemble algorithms__ are more __stable__, because the changes in a dataset could impact its tree but it could not affect the __forest__.
+___
+
+___
