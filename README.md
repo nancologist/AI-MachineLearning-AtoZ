@@ -1245,6 +1245,27 @@ In other word the **R-squared** tells how good is your Regression-Line comparing
 ___
 
 ## 8.2. Adjusted R-Squared Intuition
+There's a Problem with **R-squared** :  
+If you are going to add a new independent variable to your dataset, the `SS_res` is always going to get better (i.e. the minimum of the Sum decreases). Or in worst case scenario it's going to be the same if the coefficient of this new independent variable is going to be zero. So **R-squared will never decrease**
+
+The problem is that if this new independent variable is not going to give more information about the __dependent variable__ y, it stills improve the **R-squared** .  
+
+For example imagine the **Salary** as `y` and the **Years of experience** as `x_1` and then we are going to add the **Last Digit of Employee's Mobile Number** as `x_2` . As you see the `x_2` could have NOTHING to do with `y` and it's not going to improve the Prediction but still it's going to decrease the `SS_res` and hence increases the `R-sqaured`.  
+
+The reason is that the coefficient of the `x_2` is **NOT going to be zero** because there is always a **randomly slight correlation** between the `x_2` and `y`
+
+So there's a better way to calculate the R , which is called **Adjusted R-sqaured**
+
+![img.png](images/r-sqaured_03.png)
+
+which is `1 - (SS_res / SS_tot ) * ( n - 1 ) / ( n - p - 1 )`  
+
+* `p` : number of regressors (number of features / independent variables)
+* `n` : sample size
+
+The `p` is like a **Penalization Factor** . That means it's going to penalize you if the added independent variable is NOT going to help your prediction.
+
+We are going to use Adjusted R-Squared in this course to see if our __model is robust enough or not__.
 ___
 
 ___
