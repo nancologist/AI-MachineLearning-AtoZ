@@ -1269,3 +1269,21 @@ We are going to use Adjusted R-Squared in this course to see if our __model is r
 ___
 
 ___
+
+# 9. Selecting Best Regression Model in Python
+
+## 9.1. Preparation of the Regression Code Templates (Evaluate Regression Model)
+How should we select the best model for our dataset? The simple answer is "Try every model. and then select the model which have __the best performance result__. The performance result is __measured by coefficient R-squared__."
+
+`Data.csv` is quiet classic. but it is kind of a real world example with many datasets.  
+This data set is from **UCI Machine Learning Repository** which you can take a look at. There are a lot dataset to practice.  
+The independent variables in this data set gives the `PE` (dependent variable) , which is an Energy Output.  
+Four features are:  
+* `AT` = Ambient Temprature
+* `V` = Exhaust Vacuum
+* `AP` = Ambient pressure
+* `RH` = Relative Humiditiy
+
+We evaluate the performance of regression with:  
+`from sklearn.metrics import r2_score`
+___
