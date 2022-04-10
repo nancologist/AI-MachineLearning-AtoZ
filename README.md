@@ -1323,3 +1323,92 @@ Part 3 - Classification
 ___
 ___
 ___
+
+# 10. Classification
+Unlike regression where you predict a continuous number, you use classification to predict a category. There is a wide variety of classification applications from medicine to marketing. Classification models include linear models like Logistic Regression, SVM, and nonlinear ones like K-NN, Kernel SVM and Random Forests.
+
+In this part, you will understand and learn how to implement the following Machine Learning Classification models:
+
+1. Logistic Regression 
+2. K-Nearest Neighbors (K-NN)
+3. Support Vector Machine (SVM)
+4. Kernel SVM 
+5. Naive Bayes 
+6. Decision Tree Classification 
+7. Random Forest Classification
+___
+
+## 10.1. Logistic Regression
+
+### 10.1.1. Intuition
+Imagine as a Supermarkt we send out an offer to the customers per email. And then we have the results. the Age of Customer (as indepnedent variable) and if they took the offer (`Action = Yes`) or not (`Action = No`) :
+
+![img.png](images/log-reg_1.png)  
+
+We can see that there are some correlations between X and Y. "Older persons would more probably take the offer than younger people."
+
+___
+
+__Can we model this?__  
+If we are going to use linear regression on this distribution we would have such a model:  
+
+![img.png](images/log-reg_2.png)  
+
+We can see it does not look the best approach, to solve this problem. __Let's say our goal is to predict the `Action` for a person based on his age__.  
+
+BUT instead of predicting if the person is going to take Action or not, how about if we want to __predict the probability__ of taking action by a person with a certain age.  
+
+If you think in that way, then the Linear Regression Model in the middle of `Y=1` and `Y=0` would make some sense. It's telling you: "Anybody between those ages (for instance between 35 and 55, the arrows) there's a probability to taking the offer and that Probability is __increasing__ as move __to the right__ on X axis."  
+
+But the parts of the lin. reg. Model which makes no sense at all are the part above the `Y=1` and under `Y=0` because the prabability could not be above 100% or under 0%.  
+
+So we would then correct the above model for __Probability of Taking Action__ like this:
+
+![img.png](images/log-reg_3.png)
+___
+
+__Let's see what the actual scientific approach is:__  
+Imagine the 2nd picture above (linear regression model) has an equation like this: `y = b_0 + b_1 * x` , and if we use a __Sigmoid Function__ :  
+
+`p = 1 / ( 1 + e^(-y) )`
+
+if you solve this for `y` , you will have:
+
+`y = ln( p / (1-p) )`  
+
+And so the regression equation based on __probability__ would look like this:
+
+`ln ( p / (1-p ) = b_0 + b_1 * x`
+
+And this is the __Logistic Regression Function__ , and looks like this for our problem:
+
+![img.png](images/log-reg_4.png)
+
+For this Function we call the Y axis __p^ (Probability)__ (p^ = `p_hat`)  
+So for example we would have:  
+
+```json
+[
+  { "age": 20, "p_hat": "0.7%" },
+  { "age": 30, "p_hat": "23%" },
+  { "age": 40, "p_hat": "85%" },
+  { "age": 50, "p_hat": "99.4%" }
+]
+```
+
+![img.png](images/log-reg_5.png)
+
+But if you still want a __prediction for Y value__ and we can call it for example __y^ (Predicted Dep. Var.)__ , we can select for example the Y=0.5 and then it looks like this:
+
+`IF p^ < 50% THEN y^ = 0`  
+`IF p^ > 50% THEN y^ = 1`
+___
+___
+
+# 10.1.2. ...
+___
+___
+
+___
+___
+___
