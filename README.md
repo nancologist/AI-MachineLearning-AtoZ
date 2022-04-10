@@ -1423,7 +1423,12 @@ ___
 # 10.1.2. Logistic Regression in Python - Step 4
 Is 30 yrs person who earns 87K is going to buy the new BMW SUV or not?
 
-with `classifier.predict_proba()` we get the `p_hat` and with `classifier.predict()` we get the `y_hat` 
+with `classifier.predict_proba()` we get the `p_hat` and with `classifier.predict()` we get the `y_hat`
+___
+___
+
+# 10.1.2. Logistic Regression in Python - Step 5
+The __CONFUSION MATRIX__ gives us the number of correct and incorrect predictions by the classification model.
 ___
 ___
 

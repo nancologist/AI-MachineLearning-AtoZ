@@ -31,3 +31,16 @@ res = classifier.predict(
     sc.fit_transform([[30, 87000]])  # IMPORTANT: As we have already applied the Feature Scaling on Indep. Vars. above, we should use the same StandardScaler instance also here!
 )
 print(res)  # returns 0 - it means the Person wouldn't buy the SUV , which is right when we look at CSV file.
+
+
+# Predict Test Set Result:
+y_pred = classifier.predict(X_test)
+print(
+    numpy.concatenate(
+        (
+            y_pred.reshape(len(y_pred), 1),
+            y_test.reshape(len(y_test), 1),
+        ),
+        1
+    )
+)
