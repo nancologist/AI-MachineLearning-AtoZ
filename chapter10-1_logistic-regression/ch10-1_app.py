@@ -24,3 +24,10 @@ X_test = sc.fit_transform(X_test)
 # Training the Logistic Regression model on Training Set
 classifier = LogisticRegression(random_state=0)
 classifier.fit(X_train, y_train)
+
+
+# Predict a new result
+res = classifier.predict(
+    sc.fit_transform([[30, 87000]])  # IMPORTANT: As we have already applied the Feature Scaling on Indep. Vars. above, we should use the same StandardScaler instance also here!
+)
+print(res)  # returns 0 - it means the Person wouldn't buy the SUV , which is right when we look at CSV file.
