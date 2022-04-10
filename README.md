@@ -1405,7 +1405,10 @@ But if you still want a __prediction for Y value__ and we can call it for exampl
 ___
 ___
 
-# 10.1.2. ...
+# 10.1.2. Logistic Regression in Python - Step 1
+So as you know in Classification we don't predict the continous values but binary or categorical dependent variables.
+
+Our example, `Social_Network_ads.csv` : Let's imagine you are a Data Scientist at BMW. And your mission is to predict which of your previous customers will buy a brand new BMW SUV `purchased` (Dep Var).
 ___
 ___
 
