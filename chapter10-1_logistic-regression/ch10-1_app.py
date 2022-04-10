@@ -11,11 +11,10 @@ y = dataset.iloc[:, -1].values
 
 
 # Splitting dataset into training- and test-set
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
 
 
 # Feature Scaling
-sc_X = StandardScaler()
-sc_y = StandardScaler()
-X_train = sc_X.fit_transform(X_train)
-y_train = sc_y.fit_transform(y_train)
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.fit_transform(X_test)

@@ -1412,6 +1412,14 @@ Our example, `Social_Network_ads.csv` : Let's imagine you are a Data Scientist a
 ___
 ___
 
+# 10.1.2. Logistic Regression in Python - Step 2
+___
+___
+
+# 10.1.2. Logistic Regression in Python - Step 3
+___
+___
+
 ___
 ___
 ___
