@@ -7,7 +7,7 @@ from sklearn.svm import SVR
 from sklearn.metrics import r2_score
 
 # Importing dataset
-dataset = pd.read_csv('ENTER_THE_NAME_OF_YOUR_DATASET_HERE.csv')
+dataset = pd.read_csv('Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
 
@@ -20,7 +20,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 sc_X = StandardScaler()
 sc_y = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
-y_train = sc_y.fit_transform(y_train)
+y_train = sc_y.fit_transform(y_train)  # ERROR!
 
 
 # Training the SVR model on the Training set
@@ -45,4 +45,4 @@ print(
 # =============================================================
 # ============= EVALUATING THE MODEL PERFORMANCE: =============
 # =============================================================
-r2_score(y_test, y_pred)
+score = r2_score(y_test, y_pred)  # 0.948...

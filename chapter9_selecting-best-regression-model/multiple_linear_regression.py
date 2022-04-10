@@ -5,7 +5,7 @@ from sklearn.metrics import r2_score
 from sklearn.linear_model import LinearRegression
 
 # Importing dataset
-dataset = pd.read_csv('ENTER_THE_NAME_OF_YOUR_DATASET_HERE.csv')
+dataset = pd.read_csv('Data.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
 
@@ -36,4 +36,4 @@ print(
 # =============================================================
 # ============= EVALUATING THE MODEL PERFORMANCE: =============
 # =============================================================
-r2_score(y_test, y_pred)
+score = r2_score(y_test, y_pred)  # => 0.9325315554761302

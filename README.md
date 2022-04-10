@@ -1287,3 +1287,9 @@ Four features are:
 We evaluate the performance of regression with:  
 `from sklearn.metrics import r2_score`
 ___
+
+## 9.2. The Ultimate Demo of the Powerful Regression Code Template in Action
+So the winner model is the __Random Forest Regression__ with a score of more than `0.96`
+
+So you should try different models and then compare the R-Squared value to find the best model for your dataset.
+___
